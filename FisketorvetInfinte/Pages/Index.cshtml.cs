@@ -14,7 +14,6 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
-
         }
     }
 }
