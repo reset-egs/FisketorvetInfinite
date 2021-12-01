@@ -2,6 +2,7 @@
   {
     "Username": "abc",
     "Password": "123",
+    "ConfirmPassword": null,
     "Name": "Szymon",
     "Address": "Test",
     "PhoneNumber": "123",
@@ -11,10 +12,21 @@
   {
     "Username": "test",
     "Password": "test",
+    "ConfirmPassword": null,
     "Name": "test",
     "Address": "test",
     "PhoneNumber": "test",
     "Email": "test",
     "IsAdministrator": false
+  },
+  {
+    "Username": "admin",
+    "Password": "admin",
+    "ConfirmPassword": null,
+    "Name": "test",
+    "Address": "test",
+    "PhoneNumber": "test",
+    "Email": "test",
+    "IsAdministrator": true
   }
 ]

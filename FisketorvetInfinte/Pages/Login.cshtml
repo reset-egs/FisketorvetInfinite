@@ -5,12 +5,13 @@
 
 <body>
     <center><h1>Log In to your account</h1></center>
+    <div class="text-danger">@Model.Msg</div>
     <form method="post">
         <div class="container">
             <div class="form-group">
                 <label asp-for="@Model.username" class="control-label">Username: </label>
                 <input asp-for="@Model.username" placeholder="Please input your username" class="form-control" />
-                @*<span asp-validation-for="@Model.User.Name" class="text-danger"></span>*@
+                @*<span asp-validation-for="@Model.User.Username" class="text-danger"></span>*@
             </div>
             <div class="form-group">
                 <label asp-for="@Model.password" class="control-label">Password: </label>

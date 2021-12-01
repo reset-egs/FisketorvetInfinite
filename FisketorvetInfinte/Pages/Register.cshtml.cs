@@ -12,9 +12,12 @@ namespace FisketorvetInfinte.Pages
         }
         public IActionResult OnPost()
         {
+            if (ModelState.IsValid)
+            {
                 User.AddUser(User);
                 return RedirectToPage("Index");
-
+            }
+            return Page();
         }
     }
 }

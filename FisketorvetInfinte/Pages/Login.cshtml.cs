@@ -16,8 +16,6 @@ namespace FisketorvetInfinte.Pages
 
         public string Msg { get; set; }
 
-        public List<User> Users { get; set; } = JsonFileReaderUser.ReadJson("./Data/Users.json");
-
         public void OnGet()
         {
 
@@ -37,7 +35,7 @@ namespace FisketorvetInfinte.Pages
             if (User.Password == password)
             {
                 HttpContext.Session.SetString("username", User.Username);
-                return RedirectToPage("Index");
+                return RedirectToPage("Welcome");
             }
 
             else
