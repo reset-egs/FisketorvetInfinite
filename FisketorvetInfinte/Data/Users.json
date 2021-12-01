@@ -1,3 +1,12 @@
-{
+[
 
-}
+  {
+    "Username": "abc",
+    "Password": "123",
+    "Name": "Szymon",
+    "Address": "Test",
+    "PhoneNumber": "123",
+    "Email": "Test",
+    "IsAdministrator": "False"
+  }
+]
