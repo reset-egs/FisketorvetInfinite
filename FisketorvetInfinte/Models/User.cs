@@ -2,10 +2,9 @@
 {
     public class User
     {
-        [Required, MaxLength(100)]
         public string Username { get; set; }
 
-        [Required, MaxLength(100)]
+  
         public string Password { get; set; }
 
         public string Name { get; set; }
@@ -29,6 +28,13 @@
                 }
             }
             return null;
+        }
+
+        public static void AddUser(User u)
+        {
+            List<User> users = JsonFileReaderUser.ReadJson("./Data/Users.json");
+            users.Add(u);
+            JsonFileWriterUser.WriteToJson(users, @"C:\Users\szymo\Documents\Notes\Computer Science\Software Design\OLA\Fisketorvet Infinite\FisketorvetInfinite\FisketorvetInfinte\Data\Users.json");
         }
     }
 }

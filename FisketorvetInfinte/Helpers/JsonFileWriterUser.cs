@@ -4,7 +4,7 @@
     {
         public static void WriteToJson (List<User> users, string jsonFilePath)
         {
-            string output = JsonConvert.SerializeObject (jsonFilePath, Formatting.Indented);
+            string output = JsonConvert.SerializeObject (users, Formatting.Indented);
             File.WriteAllText (jsonFilePath, output);
         }
     }
