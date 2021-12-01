@@ -1,3 +1,20 @@
-{
-
-}
+[
+  {
+    "Username": "abc",
+    "Password": "123",
+    "Name": "Szymon",
+    "Address": "Test",
+    "PhoneNumber": "123",
+    "Email": "Test",
+    "IsAdministrator": false
+  },
+  {
+    "Username": "test",
+    "Password": "test",
+    "Name": "test",
+    "Address": "test",
+    "PhoneNumber": "test",
+    "Email": "test",
+    "IsAdministrator": false
+  }
+]
