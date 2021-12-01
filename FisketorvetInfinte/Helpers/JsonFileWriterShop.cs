@@ -9,7 +9,7 @@ namespace FisketorvetInfinte.Helpers
     {
         public static void WriteToJson(List<Shop> shops, string jsonFilePath)
         {
-            string output = JsonConvert.SerializeObject(jsonFilePath, Formatting.Indented);
+            string output = JsonConvert.SerializeObject(shops, Formatting.Indented);
             File.WriteAllText(jsonFilePath, output);
         }
     }

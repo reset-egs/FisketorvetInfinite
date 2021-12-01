@@ -9,8 +9,15 @@ namespace FisketorvetInfinte.Pages
 {
     public class ShopsModel : PageModel
     {
+
+        public List<Shop> Shops { get; set; }
+
+        
+
         public void OnGet()
         {
+            Shops = JsonFileReaderShop.ReadJson("./Data/Shop.json");
+
         }
     }
 }

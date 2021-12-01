@@ -16,3 +16,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#headerShop {
+    font-size:50px;
+    text-align: center;
+}
+
+#shopDiv {
+    width: 250px;
+    border: 1px solid black;
+    float: left;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 15px;
+    justify-content: center;
+    
+    
+}
+
+
+#divMasterShop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

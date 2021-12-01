@@ -1,7 +1,7 @@
-{
+[
   {
     "ShopId": 1,
-    "ImagePath": "hm",
+    "ImagePath": "./images/hm.png",
     "Name": "H&M",
     "Category": "Clothing Store",
     "WorkHours": "10:00 - 20:00",
@@ -9,7 +9,7 @@
   },
   {
     "ShopId": 2,
-    "ImagePath": "apotek",
+    "ImagePath": "./images/apotek.png",
     "Name": "Apotek",
     "Category": "Drugstore",
     "WorkHours": "10:00 - 21:00",
@@ -17,7 +17,7 @@
   },
   {
     "ShopId": 3,
-    "ImagePath": "beautycare",
+    "ImagePath": "./images/beautycare.png",
     "Name": "Beauty Care",
     "Category": "Beauty salon",
     "WorkHours": "10:00 - 20:00",
@@ -25,10 +25,10 @@
   },
   {
     "ShopId": 4,
-    "ImagePath": bent,
+    "ImagePath": "./images/bent.png",
     "Name": "Bent",
     "Category": "Miscellaneous",
     "WorkHours": "12:0 - 20:00",
-    "PhoneNumber":"54326756"
+    "PhoneNumber": "54326756"
   }
-}
+]
