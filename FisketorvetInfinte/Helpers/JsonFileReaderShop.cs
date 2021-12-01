@@ -7,5 +7,10 @@ namespace FisketorvetInfinte.Helpers
 {
     public class JsonFileReaderShop
     {
+        public static List<Shop> ReadJson(string jsonFilePath)
+        {
+            string output = File.ReadAllText(jsonFilePath);
+            return JsonConvert.DeserializeObject<List<Shop>>(output);
+        }
     }
 }

@@ -7,5 +7,10 @@ namespace FisketorvetInfinte.Helpers
 {
     public class JsonFileWriterShop
     {
+        public static void WriteToJson(List<Shop> shops, string jsonFilePath)
+        {
+            string output = JsonConvert.SerializeObject(jsonFilePath, Formatting.Indented);
+            File.WriteAllText(jsonFilePath, output);
+        }
     }
 }

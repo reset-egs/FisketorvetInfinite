@@ -1,3 +1,34 @@
 {
-
+  {
+    "ShopId": 1,
+    "ImagePath": "hm",
+    "Name": "H&M",
+    "Category": "Clothing Store",
+    "WorkHours": "10:00 - 20:00",
+    "PhoneNumber": "27944758"
+  },
+  {
+    "ShopId": 2,
+    "ImagePath": "apotek",
+    "Name": "Apotek",
+    "Category": "Drugstore",
+    "WorkHours": "10:00 - 21:00",
+    "PhoneNumber": "54768944"
+  },
+  {
+    "ShopId": 3,
+    "ImagePath": "beautycare",
+    "Name": "Beauty Care",
+    "Category": "Beauty salon",
+    "WorkHours": "10:00 - 20:00",
+    "PhoneNumber": "55778833"
+  },
+  {
+    "ShopId": 4,
+    "ImagePath": bent,
+    "Name": "Bent",
+    "Category": "Miscellaneous",
+    "WorkHours": "12:0 - 20:00",
+    "PhoneNumber":"54326756"
+  }
 }
