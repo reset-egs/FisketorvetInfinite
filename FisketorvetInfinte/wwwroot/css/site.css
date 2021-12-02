@@ -14,7 +14,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('/images/bg2.jpg');
+    background-repeat:repeat;
 }
 
 #headerShop {
@@ -30,14 +32,33 @@ body {
     margin-top: 25px;
     padding: 15px;
     justify-content: center;
+    opacity:100%;
     
     
 }
 
+#shopDiv:hover {
+        background-image: linear-gradient(to right, #0044ad, #58f3e1);
+        opacity:50%;
+    }
 
 #divMasterShop {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+nav {
+    width: 200px;
+    height: 100vh;
+    display: block;
+    float: left;
+    overflow: hidden;
+    background-image: url('/images/navbg.png');
+    background-repeat: repeat;
+}
+
+.container {
+    position:relative;
 }
 
