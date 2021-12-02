@@ -22,7 +22,7 @@
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        public bool IsAdministrator { get; set; }
+        public string Role { get; set; }
 
         public User FindUser(string username)
         {

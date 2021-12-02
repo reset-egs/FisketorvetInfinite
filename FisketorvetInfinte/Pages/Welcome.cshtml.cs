@@ -1,11 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages
 {
     public class WelcomeModel : PageModel
     {
-        public string Username { get; set; }
+        public string Role { get; set; }
    
         public List<User> Users { get; set; } = new List<User>();
 
@@ -14,13 +11,13 @@ namespace FisketorvetInfinte.Pages
         
         public void OnGet()
         {
-            Username = HttpContext.Session.GetString("username");
+            Role = HttpContext.Session.GetString("role");
         }
 
-        public IActionResult OnGetLogout()
-        {
-            HttpContext.Session.Remove("username");
-            return RedirectToPage("Index");
-        }
+        //public IActionResult OnGetLogout()
+        //{
+        //    HttpContext.Session.Remove("username");
+        //    return RedirectToPage("Index");
+        //}
     }
 }

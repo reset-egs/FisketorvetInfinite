@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace FisketorvetInfinte.Pages
+﻿namespace FisketorvetInfinte.Pages
 {
     public class IndexModel : PageModel
     {
@@ -12,8 +9,11 @@ namespace FisketorvetInfinte.Pages
             _logger = logger;
         }
 
+        public string Role { get; set; }
+
         public void OnGet()
         {
+            Role = HttpContext.Session.GetString("role");
         }
     }
 }

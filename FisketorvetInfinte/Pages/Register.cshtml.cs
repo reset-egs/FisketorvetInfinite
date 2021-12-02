@@ -7,8 +7,12 @@ namespace FisketorvetInfinte.Pages
     {
         [BindProperty]
         public User User { get; set; } = new User();
+
+        public string Role { get; set; }
+
         public void OnGet()
         {
+            Role = HttpContext.Session.GetString("role");
         }
         public IActionResult OnPost()
         {

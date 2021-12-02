@@ -7,7 +7,7 @@
     "Address": "Test",
     "PhoneNumber": "123",
     "Email": "Test",
-    "IsAdministrator": false
+    "Role": "admin"
   },
   {
     "Username": "test",
@@ -17,7 +17,7 @@
     "Address": "test",
     "PhoneNumber": "test",
     "Email": "test",
-    "IsAdministrator": false
+    "Role": "user"
   },
   {
     "Username": "admin",
@@ -27,6 +27,6 @@
     "Address": "test",
     "PhoneNumber": "test",
     "Email": "test",
-    "IsAdministrator": true
+    "Role": "user"
   }
 ]

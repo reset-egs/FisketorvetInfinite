@@ -16,9 +16,11 @@ namespace FisketorvetInfinte.Pages
 
         public string Msg { get; set; }
 
+        public string Role { get; set; }
+
         public void OnGet()
         {
-
+            Role = HttpContext.Session.GetString("role");
         }
         public IActionResult OnPost()
         {
@@ -34,7 +36,7 @@ namespace FisketorvetInfinte.Pages
 
             if (User.Password == password)
             {
-                HttpContext.Session.SetString("username", User.Username);
+                HttpContext.Session.SetString("role", User.Role);
                 return RedirectToPage("Welcome");
             }
 
