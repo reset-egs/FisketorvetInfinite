@@ -12,12 +12,12 @@ namespace FisketorvetInfinte.Pages
 
         public List<Shop> Shops { get; set; }
 
-        
+        public string Role { get; set; }
 
         public void OnGet()
         {
             Shops = JsonFileReaderShop.ReadJson("./Data/Shop.json");
-
+            Role = HttpContext.Session.GetString("role");
         }
     }
 }
