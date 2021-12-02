@@ -4,6 +4,8 @@
 }
 <header id="headerShop">Fisketorvet shops</header>
 
+<a asp-page="/CreateShop"> Add new shop</a>
+
     <div id="divMasterShop">
        
         @foreach (var shop in Model.Shops)
@@ -16,6 +18,8 @@
             <p>@shop.Category </p>
             <p>@shop.WorkHour</p>
             <p>@shop.PhoneNumber</p>
+            
+
             
             </div>
 
