@@ -21,28 +21,7 @@
 
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-
         
         public string ? Role { get; set; }
-
-        public User FindUser(string username)
-        {
-            List<User> users = JsonFileReaderUser.ReadJson("./Data/Users.json");
-            foreach(var user in users)
-            {
-                if (user.Username == username)
-                {
-                    return user;
-                }
-            }
-            return null;
-        }
-
-        public static void AddUser(User u)
-        {
-            List<User> users = JsonFileReaderUser.ReadJson("./Data/Users.json");
-            users.Add(u);
-            JsonFileWriterUser.WriteToJson(users, @"C:\Users\szymo\Documents\Notes\Computer Science\Software Design\OLA\Fisketorvet Infinite\FisketorvetInfinite\FisketorvetInfinte\Data\Users.json");
-        }
     }
 }
