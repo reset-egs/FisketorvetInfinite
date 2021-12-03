@@ -1,0 +1,50 @@
+[
+  {
+    "ProductId": 1,
+    "Price": 199.90,
+    "Size": "M",
+    "Colour": "White"
+  },
+  {
+    "ProductId": 2,
+    "Price": 250,
+    "Size": "L",
+    "Colour": "Red"
+  },
+  {
+    "ProductId": 3,
+    "Price": 89.90,
+    "Size": "S",
+    "Colour": "Purple"
+  },
+  {
+    "ProductId": 4,
+    "Price": 148.20,
+    "Size": "XL",
+    "Colour": "Black"
+  },
+  {
+    "ProductId": 5,
+    "Price": 125.25,
+    "Size": "XS",
+    "Colour": "Green"
+  },
+  {
+    "ProductId": 6,
+    "Price": 100,
+    "Size": "L",
+    "Colour": "Orange"
+  },
+  {
+    "ProductId": 7,
+    "Price": 99.90,
+    "Size": "XXL",
+    "Colour": "Black"
+  },
+  {
+    "ProductId": 8,
+    "Price": 70.70,
+    "Size": "S",
+    "Colour": "Red"
+  }
+]

@@ -13,8 +13,11 @@ namespace FisketorvetInfinte.Pages.Shops
             _productService = service;
         }
 
+        public List<Product> Products { get; set; }
+
         public void OnGet()
         {
+            Products = JsonFileProductService.ReadJson("./Data/Products.json");
         }
     }
 }
