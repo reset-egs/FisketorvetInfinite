@@ -1,4 +1,8 @@
 ﻿global using FisketorvetInfinte.Models;
+<<<<<<< Updated upstream
+=======
+global using FisketorvetInfinte.Services;
+>>>>>>> Stashed changes
 global using System.IO;
 global using System.Collections.Generic;
 global using System;
