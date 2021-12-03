@@ -15,15 +15,22 @@ namespace FisketorvetInfinte.Pages
 
         public string Role { get; set; }
 
+        public IUserService UserService { get; set; }
+
+        public Index1Model(IUserService service)
+        {
+            UserService = service;
+        }   
+
         public void OnGet()
         {
             Role = HttpContext.Session.GetString("role");
         }
         public IActionResult OnPost()
         {
-            if (User.FindUser(username) != null)
+            if (UserService.FindUser(username) != null)
             {
-                User = User.FindUser(User.Username);
+                User = UserService.FindUser(User.Username);
             }
             else
             {

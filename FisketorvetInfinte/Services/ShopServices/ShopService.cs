@@ -1,6 +1,6 @@
 ﻿namespace FisketorvetInfinte.Services.ShopServices
 {
-    public class ShopService
+    public class ShopService : IShopService
     {
         public Shop GetShop()
         {

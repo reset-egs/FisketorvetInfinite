@@ -8,7 +8,12 @@ namespace FisketorvetInfinte.Pages
 
         public Shop Shop { get; set; }
 
+        public IShopService ShopService { get; set; }
 
+        public CreateShopModel(IShopService service)
+        {
+            ShopService = service;
+        }
 
         public void OnGet()
         {
