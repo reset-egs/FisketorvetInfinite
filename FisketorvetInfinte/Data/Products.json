@@ -1,48 +1,64 @@
 [
   {
     "ProductId": 1,
+    "ProductName": "Jeans",
+    "ImageName": "bluejeans.png",
     "Price": 199.90,
     "Size": "M",
-    "Colour": "White"
+    "Colour": "Blue"
   },
   {
     "ProductId": 2,
+    "ProductName": "Jacket",
+    "ImageName": "jacket.png",
     "Price": 250,
     "Size": "L",
     "Colour": "Red"
   },
   {
     "ProductId": 3,
+    "ProductName": "Sweatshirt",
+    "ImageName": "sweatshirt.png",
     "Price": 89.90,
     "Size": "S",
     "Colour": "Purple"
   },
   {
     "ProductId": 4,
+    "ProductName": "Socks",
+    "ImageName": "socks.png",
     "Price": 148.20,
     "Size": "XL",
     "Colour": "Black"
   },
   {
     "ProductId": 5,
+    "ProductName": "Hat",
+    "ImageName": "hat.png",
     "Price": 125.25,
     "Size": "XS",
     "Colour": "Green"
   },
   {
     "ProductId": 6,
+    "ProductName": "T-Shirt",
+    "ImageName": "tshirt.png",
     "Price": 100,
     "Size": "L",
     "Colour": "Orange"
   },
   {
     "ProductId": 7,
+    "ProductName": "Jeans",
+    "ImageName": "blackjeans.png",
     "Price": 99.90,
     "Size": "XXL",
     "Colour": "Black"
   },
   {
     "ProductId": 8,
+    "ProductName": "Bra",
+    "ImageName": "bra.png",
     "Price": 70.70,
     "Size": "S",
     "Colour": "Red"
