@@ -5,7 +5,8 @@
     "Name": "H&M",
     "Category": "Clothing Store",
     "WorkHours": "10:00 - 20:00",
-    "PhoneNumber": "27944758"
+    "PhoneNumber": "27944758",
+    "Description": "H&M is a Swedish multinational clothing company headquartered in Stockholm. It is known for its fast-fashion clothing for men, women, teenagers, and children. As of November 2019, H&M operates in 74 countries with over 5,000 stores under the various company brands, with 126,000 full-time equivalent positions."
   },
   {
     "ShopId": 2,
@@ -13,7 +14,8 @@
     "Name": "Apotek",
     "Category": "Drugstore",
     "WorkHours": "10:00 - 21:00",
-    "PhoneNumber": "54768944"
+    "PhoneNumber": "54768944",
+    "Description": ""
   },
   {
     "ShopId": 3,
@@ -21,7 +23,8 @@
     "Name": "Beauty Care",
     "Category": "Beauty salon",
     "WorkHours": "10:00 - 20:00",
-    "PhoneNumber": "55778833"
+    "PhoneNumber": "55778833",
+    "Description": ""
   },
   {
     "ShopId": 4,
@@ -29,6 +32,7 @@
     "Name": "Bent",
     "Category": "Miscellaneous",
     "WorkHours": "12:0 - 20:00",
-    "PhoneNumber": "54326756"
+    "PhoneNumber": "54326756",
+    "Description": ""
   }
 ]

@@ -59,7 +59,12 @@ nav {
     background-repeat: repeat;
 }
 
-.margin-left {
-    margin-left:200px;
+.padding-left {
+    padding-left:200px;
 }
 
+.modal-link {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    
+}
