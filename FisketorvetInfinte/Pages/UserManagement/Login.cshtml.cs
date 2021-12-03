@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages
 {
     public class Index1Model : PageModel
@@ -37,7 +34,7 @@ namespace FisketorvetInfinte.Pages
             if (User.Password == password)
             {
                 HttpContext.Session.SetString("role", User.Role);
-                return RedirectToPage("Welcome");
+                return RedirectToPage("../Welcome");
             }
 
             else

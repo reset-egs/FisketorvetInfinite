@@ -28,5 +28,25 @@
     "PhoneNumber": "test",
     "Email": "test",
     "Role": "user"
+  },
+  {
+    "Username": "test",
+    "Password": "test",
+    "ConfirmPassword": "test",
+    "Name": "elo",
+    "Address": "el",
+    "PhoneNumber": "52",
+    "Email": "elo@onet.pl",
+    "Role": null
+  },
+  {
+    "Username": "test",
+    "Password": "dupa",
+    "ConfirmPassword": "dupa",
+    "Name": "elo",
+    "Address": "elo",
+    "PhoneNumber": "52",
+    "Email": "elo@onet.pl",
+    "Role": null
   }
 ]

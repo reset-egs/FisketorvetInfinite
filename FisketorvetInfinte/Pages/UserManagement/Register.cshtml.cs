@@ -19,7 +19,7 @@ namespace FisketorvetInfinte.Pages
             if (ModelState.IsValid)
             {
                 User.AddUser(User);
-                return RedirectToPage("Index");
+                return RedirectToPage("../Index");
             }
             return Page();
         }
