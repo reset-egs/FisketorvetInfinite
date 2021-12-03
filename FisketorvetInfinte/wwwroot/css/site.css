@@ -37,9 +37,10 @@ body {
     
 }
 
-#shopDiv:hover {
+    #shopDiv:hover {
         background-image: linear-gradient(to right, #0044ad, #58f3e1);
-        opacity:50%;
+       
+   
     }
 
 #divMasterShop {
@@ -58,7 +59,7 @@ nav {
     background-repeat: repeat;
 }
 
-.container {
-    position:relative;
+.margin-left {
+    margin-left:200px;
 }
 
