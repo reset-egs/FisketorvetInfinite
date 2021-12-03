@@ -34,7 +34,7 @@ namespace FisketorvetInfinte.Pages
             }
             else
             {
-                Msg = "Invalid";
+                Msg = "Username or password is not correct.";
                 return Page();
             }
 

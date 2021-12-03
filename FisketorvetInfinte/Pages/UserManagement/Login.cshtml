@@ -13,7 +13,12 @@
 
 <body>
     <h1>Log In</h1>
-    @*<div class="text-danger">@Model.Msg</div>*@
+
+    @if(Model.Msg != null)
+    {
+         <div class="alert alert-danger" role="alert">@Model.Msg</div>
+    }
+
     <form method="post">
             <div class="form-group">
                 <label asp-for="@Model.Username" class="control-label"><b>Username:</b></label>
