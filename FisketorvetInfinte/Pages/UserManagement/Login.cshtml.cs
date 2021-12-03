@@ -3,10 +3,10 @@ namespace FisketorvetInfinte.Pages
     public class Index1Model : PageModel
     {
         [BindProperty]
-        public string username { get; set; }
+        public string Username { get; set; }
 
         [BindProperty]
-        public string password { get; set; }
+        public string Password { get; set; }
 
         [BindProperty]
         public User User { get; set; }
@@ -28,7 +28,7 @@ namespace FisketorvetInfinte.Pages
         }
         public IActionResult OnPost()
         {
-            if (UserService.FindUser(username) != null)
+            if (UserService.FindUser(Username) != null)
             {
                 User = UserService.FindUser(User.Username);
             }
@@ -38,7 +38,7 @@ namespace FisketorvetInfinte.Pages
                 return Page();
             }
 
-            if (User.Password == password)
+            if (User.Password == Password)
             {
                 HttpContext.Session.SetString("role", User.Role);
                 return RedirectToPage("../Welcome");
@@ -49,7 +49,6 @@ namespace FisketorvetInfinte.Pages
                 Msg = "Invalid";
                 return Page();
             }
-            return Page();
         }
     }
 }

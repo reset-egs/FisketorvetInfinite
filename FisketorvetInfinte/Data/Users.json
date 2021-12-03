@@ -48,5 +48,15 @@
     "PhoneNumber": "52",
     "Email": "elo@onet.pl",
     "Role": null
+  },
+  {
+    "Username": "bartol",
+    "Password": "123",
+    "ConfirmPassword": "123",
+    "Name": "Bartol",
+    "Address": null,
+    "PhoneNumber": null,
+    "Email": "bartol@barol.com",
+    "Role": null
   }
 ]
