@@ -11,6 +11,13 @@ namespace FisketorvetInfinte.Pages
 
         public string Role { get; set; }
 
+        public IUserService UserService { get; set; }
+
+        public RegisterModel(IUserService service)
+        {
+            UserService = service;
+        }
+
         public void OnGet()
         {
             Role = HttpContext.Session.GetString("role");
@@ -19,7 +26,7 @@ namespace FisketorvetInfinte.Pages
         {
             if (ModelState.IsValid)
             {
-                User.AddUser(User);
+                UserService.AddUser(User);
                 return RedirectToPage("../Index");
             }
             return Page();

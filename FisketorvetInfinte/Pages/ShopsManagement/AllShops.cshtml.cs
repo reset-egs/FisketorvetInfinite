@@ -1,14 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages
 {
-    public class ShopsModel : PageModel
+    public class AllShopsModel : PageModel
     {
+
+        public IShopService _shopService;
+
+        public AllShopsModel(IShopService service)
+        {
+            _shopService = service;
+        }
 
         public List<Shop> Shops { get; set; }
 
@@ -16,7 +16,7 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
-            Shops = JsonFileReaderShop.ReadJson("./Data/Shop.json");
+            Shops = JsonFileShopService.ReadJson("./Data/Shop.json");
 
         }
     }

@@ -8,6 +8,12 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+builder.Services.AddTransient<JsonFileShopService>();
+builder.Services.AddTransient<IShopService, ShopService>();
+builder.Services.AddTransient<JsonFileProductService>();
+builder.Services.AddSingleton<ProductService, ProductService>();
+builder.Services.AddTransient<JsonFileUserService>();
+builder.Services.AddTransient<IUserService, UserService>();
 
 var app = builder.Build();
 

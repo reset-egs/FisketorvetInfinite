@@ -56,10 +56,9 @@
                 <input asp-for="@Model.User.PhoneNumber" type="text" placeholder="Enter phone number" name="phonenumber" id="phonenumber">
                 <span asp-validation-for="@Model.User.PhoneNumber" class="text-danger"></span>
             </div>
-
+           </div>
         <p>By creating an account you agree to our <a href="/Privacy">Terms & Privacy</a>.</p>
         <input type="submit" value="Register" class="btn btn-primary"/>
-    </div>
     </div>
     <div class="container signin">
         <p>Already have an account? <a href="/Login">Sign in</a>.</p>
