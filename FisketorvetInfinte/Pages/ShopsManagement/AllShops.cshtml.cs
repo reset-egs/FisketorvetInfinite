@@ -16,7 +16,7 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
-            Shops = JsonFileReaderShop.ReadJson("./Data/Shop.json");
+            Shops = JsonFileShopService.ReadJson("./Data/Shop.json");
 
         }
     }
