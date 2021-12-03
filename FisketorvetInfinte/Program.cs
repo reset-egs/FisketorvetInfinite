@@ -11,7 +11,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddTransient<JsonFileShopService>();
 builder.Services.AddTransient<IShopService, ShopService>();
 builder.Services.AddTransient<JsonFileProductService>();
-builder.Services.AddSingleton<ProductService, ProductService>();
+builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddTransient<JsonFileUserService>();
 builder.Services.AddTransient<IUserService, UserService>();
 

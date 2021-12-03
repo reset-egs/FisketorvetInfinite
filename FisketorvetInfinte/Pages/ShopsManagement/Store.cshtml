@@ -2,3 +2,20 @@
 @model FisketorvetInfinte.Pages.Shops.StoreModel
 @{
 }
+<div id="divMasterShop">
+       
+        @foreach (var p in Model.Products)
+        {
+
+            <div id="shopDiv">
+           
+            <h3>@p.ProductId </h3> 
+            <p>@p.Price</p>
+            <p>@p.Size</p>
+            <p>@p.Colour</p>
+            
+            </div>
+
+        }
+
+       </div>
