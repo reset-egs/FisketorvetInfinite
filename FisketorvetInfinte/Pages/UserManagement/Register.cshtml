@@ -14,34 +14,40 @@
 <body>
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
+
+    @if (Model.Msg != null)
+    {
+        <div class="alert alert-danger" role="alert">@Model.Msg</div>
+    }
+
     <form method="post">
         <div class="form-group">
-            <label asp-for="@Model.User.Username" class="control-label"><b>Username:</b></label>
-            <input asp-for="@Model.User.Username" type="text" placeholder="Input your username" class="form-control" />
+            <label asp-for="@Model.Username" class="control-label"><b>Username:</b></label>
+            <input asp-for="@Model.Username" type="text" placeholder="(Required) Input your username" class="form-control" />
             <span asp-validation-for="@Model.User.Username" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="@Model.User.Password" class="control-label"><b>Password:</b></label>
-            <input asp-for="@Model.User.Password" type="password" placeholder="Input your password" class="form-control" />
+            <input asp-for="@Model.User.Password" type="password" placeholder="(Required) Input your password" class="form-control" />
             <span asp-validation-for="@Model.User.Password" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="@Model.User.ConfirmPassword" class="control-label"><b>Repeat Password:</b></label>
-            <input asp-for="@Model.User.ConfirmPassword" type="password" placeholder="Repeat your password" class="form-control" />
+            <input asp-for="@Model.User.ConfirmPassword" type="password" placeholder="(Required) Repeat your password" class="form-control" />
             <span asp-validation-for="@Model.User.ConfirmPassword" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="@Model.User.Email" class="control-label"><b>Email:</b></label>
-            <input asp-for="@Model.User.Email" type="email" placeholder="Input your email" class="form-control" />
+            <input asp-for="@Model.User.Email" type="email" placeholder="(Required) Input your email" class="form-control" />
             <span asp-validation-for="@Model.User.Email" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="@Model.User.Name" class="control-label"><b>Full Name:</b></label>
-            <input asp-for="@Model.User.Name" type="text" placeholder="Input your name" class="form-control" />
+            <input asp-for="@Model.User.Name" type="text" placeholder="(Required) Input your name" class="form-control" />
             <span asp-validation-for="@Model.User.Name" class="text-danger"></span>
         </div>
 
@@ -61,6 +67,6 @@
     </form>
     <div>
         <p>By creating an account you agree to our <a href="/Privacy">Terms & Privacy</a>.</p>
-        <p>Already have an account? <a href="/Login">Sign in</a>.</p>
+        <p>Already have an account? <a href="./Login">Sign in</a>.</p>
     </div>
 </body>

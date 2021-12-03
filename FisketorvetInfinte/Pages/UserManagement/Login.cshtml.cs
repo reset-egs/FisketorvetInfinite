@@ -3,13 +3,13 @@ namespace FisketorvetInfinte.Pages
     public class Index1Model : PageModel
     {
         [BindProperty]
+        public User User { get; set; }
+
+        [BindProperty]
         public string Username { get; set; }
 
         [BindProperty]
         public string Password { get; set; }
-
-        [BindProperty]
-        public User User { get; set; }
 
         public string Msg { get; set; }
 
@@ -26,6 +26,7 @@ namespace FisketorvetInfinte.Pages
         {
             Role = HttpContext.Session.GetString("role");
         }
+
         public IActionResult OnPost()
         {
             if (UserService.FindUser(Username) != null)
@@ -34,7 +35,7 @@ namespace FisketorvetInfinte.Pages
             }
             else
             {
-                Msg = "Username or password is not correct.";
+                Msg = "User does not exists. Register to make a new account.";
                 return Page();
             }
 
@@ -46,7 +47,7 @@ namespace FisketorvetInfinte.Pages
 
             else
             {
-                Msg = "Invalid";
+                Msg = "Password is incorrect, please try again.";
                 return Page();
             }
         }
