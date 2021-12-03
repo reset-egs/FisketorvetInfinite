@@ -1,7 +1,7 @@
 ﻿@page
 @model FisketorvetInfinte.Pages.Index1Model
 @{
-    if (Model.Role == "admin")
+    if(Model.Role == "admin")
     {
         Layout = "_AdminLayout";
     }
@@ -12,22 +12,27 @@
 }
 
 <body>
-    <center><h1>Log In to your account</h1></center>
-    <div class="text-danger">@Model.Msg</div>
+    <h1>Log In</h1>
+
+    @if(Model.Msg != null)
+    {
+         <div class="alert alert-danger" role="alert">@Model.Msg</div>
+    }
+
     <form method="post">
-        <div class="container">
             <div class="form-group">
-                <label asp-for="@Model.username" class="control-label">Username: </label>
-                <input asp-for="@Model.username" placeholder="Please input your username" class="form-control" />
-                @*<span asp-validation-for="@Model.User.Username" class="text-danger"></span>*@
+                <label asp-for="@Model.Username" class="control-label"><b>Username:</b></label>
+                <input asp-for="@Model.Username" placeholder="Input your username" class="form-control" />
+                <span asp-validation-for="@Model.User.Username" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="@Model.password" class="control-label">Password: </label>
-                <input asp-for="@Model.password" type="password" placeholder="Please input your password" class="form-control" />
-                @*<span asp-validation-for="@Model.User.Password" class="text-danger"></span>*@
+                <label asp-for="@Model.Password" class="control-label"><b>Password:</b></label>
+                <input asp-for="@Model.Password" type="password" placeholder="Input your password" class="form-control" />
+                <span asp-validation-for="@Model.User.Password" class="text-danger"></span>
             </div>
-            <input type="submit" value="Login" class="btn btn-primary" />
-            <a href="./Register" type="button" class="btn btn-primary">Register</a>
-        </div>
+            <p></p>
+             <input type="submit" value="Login" class="btn btn-primary"/>
+             <a href="./Register" type="button" class="btn btn-primary">Register</a>
     </form>
 </body>
