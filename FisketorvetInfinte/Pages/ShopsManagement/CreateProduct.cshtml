@@ -1,0 +1,44 @@
+﻿@page
+@model FisketorvetInfinte.Pages.ShopsManagement.CreateProductModel
+@{
+    if (Model.Role == "admin")
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="@Model.Product.ProductName" class="control-label">Name</label>
+        <input asp-for="@Model.Product.ProductName" class="form-control" />
+        <span asp-validation-for="@Model.Product.ProductName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Product.Price" class="control-label">Price</label>
+        <input asp-for="@Model.Product.Price" class="form-control" />
+        <span asp-validation-for="@Model.Product.Price" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Product.Size" class="control-label">Size</label>
+        <input asp-for="@Model.Product.Size" class="form-control" />
+        
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Product.Colour" class="control-label">Colour</label>
+        <input asp-for="@Model.Product.Colour" class="form-control" />
+    </div>
+    <div class="form-group">
+        @*ProductName:<input id="Text1" type="text" asp-for="@Model.Product.PName" /><br />
+    choose file:<input id="File1" type="file" asp-for="image.file" /><br />
+    file description:<input id="Text1" type="text" asp-for="image.description" /><br />*@
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
