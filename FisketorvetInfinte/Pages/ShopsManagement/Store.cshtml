@@ -16,7 +16,7 @@
  @if(Model.Role == "admin")
     {
         <div class="d-flex justify-content-center">
-        <a href="/AddProduct">
+        <a href="/ShopsManagement/CreateProduct">
             <button class="btn btn-success">Add Product</button>
         </a>
         </div>
@@ -31,9 +31,10 @@
            
             <h4>@p.ProductName</h4>
             <img style="width:200px;height:200px;" src="/images/@p.ImageName"><img>
-            <p>Price: @p.Price</p>
-            <p>Size: @p.Size</p>
-            <p>Colour: @p.Colour</p>
+            <p>Price: <span class="badge bg-success">@p.Price</span></p>
+            <p>Size: <span class="badge bg-success">@p.Size</span></p>
+            <p>Colour: <span class="badge bg-success">@p.Colour</span></p>
+            <a class="btn btn-primary btn-sm mr-10">Add to cart</a>
             @if(Model.Role == "admin") 
             {
                 <div class="align-content-center">
