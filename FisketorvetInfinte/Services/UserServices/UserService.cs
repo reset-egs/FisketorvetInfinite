@@ -3,10 +3,15 @@
     public class UserService : IUserService
     {
         public List<User> GetUsers { get; }
-        
+        List<User> users = JsonFileUserService.ReadJson("./Data/Users.json");
+
+        public List<User> AllUsers()
+        {
+            return users;
+        }
         public User FindUser(string username)
         {
-            List<User> users = JsonFileUserService.ReadJson("./Data/Users.json");
+            
             foreach (var user in users)
             {
                 if (user.Username == username)
@@ -19,7 +24,7 @@
 
         public void AddUser(User u)
         {
-            List<User> users = JsonFileUserService.ReadJson("./Data/Users.json");
+           
             users.Add(u);
             JsonFileUserService.WriteToJson(users, "./Data/Users.json");
         }

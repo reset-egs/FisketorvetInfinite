@@ -2,7 +2,8 @@
 @model FisketorvetInfinte.Pages.UserManagement.AllUsersModel
 @{
 }
-<table class="table">
+<div class="table-responsive-sm">
+  <table class="table table-hover">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Username</th>
@@ -10,34 +11,23 @@
       <th scope="col">Email</th>
       <th scope="col">Adress</th>
       <th scope="col">Phone number</th>
-      <th scope="col">Administrator</th>
+      <th scope="col">Administrator/User</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <<td>test</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>mdo</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
-    <tr>
-     <td>test</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>fat</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
-    <tr>
-      <td>test</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>twitter</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
+      @foreach (var user in Model.Users)
+      {
+      <tr>
+      <td>@user.Username</td>
+      <td>@user.Name</td>
+      <td>@user.Email</td>
+      <td>@user.Address</td>
+      <td>@user.PhoneNumber</td>
+      <td>@user.Role</td>
+       </tr>
+      }
+     
   </tbody>
 </table>
+</div>
 

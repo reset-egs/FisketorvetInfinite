@@ -6,6 +6,6 @@
 
         void AddUser(User u);
 
-        List<User> GetUsers { get; }
+        List<User> AllUsers();
     }
 }

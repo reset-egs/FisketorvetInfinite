@@ -10,7 +10,7 @@
     "Role": "admin"
   },
   {
-    "Username": "bartol",
+    "Username": "Bartol",
     "Password": "123",
     "ConfirmPassword": "123",
     "Name": "Bartol",
@@ -18,5 +18,15 @@
     "PhoneNumber": null,
     "Email": "bartol@barol.com",
     "Role": "user"
+  },
+  {
+    "Username": "Tea",
+    "Password": "123",
+    "ConfirmPassword": "123",
+    "Name": "Tea",
+    "Address": "Zealand",
+    "PhoneNumber": "55667788",
+    "Email": "teax@tea.com",
+    "Role": "admin"
   }
 ]
