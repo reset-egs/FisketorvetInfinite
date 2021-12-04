@@ -1,21 +1,47 @@
 ﻿@page
 @model FisketorvetInfinte.Pages.Shops.StoreModel
 @{
+    if (Model.Role == "admin")
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
 }
+
+<header id="headerShop">Online Store</header>
+
+ @if(Model.Role == "admin")
+    {
+        <div class="d-flex justify-content-center">
+        <a href="/ShopsManagement/CreateProduct">
+            <button class="btn btn-success">Add Product</button>
+        </a>
+        </div>
+    }
+
 <div id="divMasterShop">
-       
+
         @foreach (var p in Model.Products)
         {
 
-            <div id="shopDiv">
+            <div id="shopDiv" class="position-relative">
            
-            <h3>@p.ProductId </h3> 
-            <p>@p.Price</p>
-            <p>@p.Size</p>
-            <p>@p.Colour</p>
-            
+            <h4>@p.ProductName</h4>
+            <img style="width:200px;height:200px;" src="/images/@p.ImageName"><img>
+            <p>Price: <span class="badge bg-success">@p.Price</span></p>
+            <p>Size: <span class="badge bg-success">@p.Size</span></p>
+            <p>Colour: <span class="badge bg-success">@p.Colour</span></p>
+            <a class="btn btn-primary btn-sm mr-10">Add to cart</a>
+            @if(Model.Role == "admin") 
+            {
+                <div class="align-content-center">
+                <a href="/EditProduct" class="btn btn-primary btn-sm mr-10">Edit Product</a>            
+                <a href="/DeleteProduct" class="btn btn-danger btn-sm">Delete Product</a>                
+                </div>
+            }
             </div>
-
         }
-
        </div>
