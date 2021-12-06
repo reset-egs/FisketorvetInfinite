@@ -1,0 +1,43 @@
+﻿@page "{username}"
+@model FisketorvetInfinte.Pages.UserManagement.EditUserModel
+@{
+}
+<h1>Edit User</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.User.Name" class="control-label">Name </label>
+        <input asp-for="@Model.User.Name" class="form-control" />
+        <span asp-validation-for="@Model.User.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.User.Address" class="control-label">Address</label>
+        <input asp-for="@Model.User.Address" class="form-control" />
+        <span asp-validation-for="@Model.User.Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.User.PhoneNumber" class="control-label"> Phone Number </label>
+        <input asp-for="@Model.User.PhoneNumber" class="form-control" />
+        <span asp-validation-for="@Model.User.PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.User.Email" class="control-label"> Email </label>
+        <input asp-for="@Model.User.Email" class="form-control" />
+        <span asp-validation-for="@Model.User.Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="@Model.User.Role" class="control-label">Role: </label>
+        <select class="form-control form-control-sm">
+            <option>Admin</option>
+            <option>User</option>
+        </select>
+    </div>
+    <p></p>
+    <div>
+        <button type="submit" value="Edit" class="btn btn-success">Save Changes</button>
+        <button type="reset" class="btn btn-warning">Reset form</button>
+        <button type="button" href="/UserManagement/AllUsers" class="btn btn-danger">Cancel</button>
+    </div>
+
+</form>
+
