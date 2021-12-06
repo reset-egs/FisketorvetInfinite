@@ -30,10 +30,10 @@
                 {
                     if(p.ProductId == product.ProductId)
                     {
-                        product.ProductId = p.ProductId;
-                        product.Price = p.Price;
-                        product.Size = p.Size;
-                        product.Colour = p.Colour;
+                        p.ProductName = product.ProductName;
+                        p.Price = product.Price;
+                        p.Size = product.Size;
+                        p.Colour = product.Colour;
                     }
                 }
             }
@@ -48,11 +48,12 @@
                 {
                     if(product.ProductId == p.ProductId)
                     {
-                        AllProducts.Remove(p);
+                        AllProducts.Remove(product);
+                        break;
                     }
                 }
             }
-            JsonFileProductService.WriteToJson(AllProducts, ".Data/Products.json");
+            JsonFileProductService.WriteToJson(AllProducts, "./Data/Products.json");
         }
     }
 }

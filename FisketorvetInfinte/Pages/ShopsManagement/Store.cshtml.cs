@@ -11,6 +11,8 @@ namespace FisketorvetInfinte.Pages.Shops
 
         public List<Product> Products { get; set; }
 
+        public Product Product { get; set; } = new Product();
+
         public string Role { get; set; }
 
         public void OnGet()
