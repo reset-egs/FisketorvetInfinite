@@ -2,11 +2,16 @@
 {
     public class Product
     {
+        public Product()
+        {
+
+        }
+
         public int ProductId { get; set; }
 
         public string ProductName { get; set; }
 
-        public string ImageName { get; set; }
+        public string ? ImageName { get; set; }
 
         public float Price { get; set; }
 

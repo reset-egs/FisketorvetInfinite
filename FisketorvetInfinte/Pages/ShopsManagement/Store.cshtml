@@ -38,8 +38,8 @@
             @if(Model.Role == "admin") 
             {
                 <div class="align-content-center">
-                <a href="/EditProduct" class="btn btn-primary btn-sm mr-10">Edit Product</a>            
-                <a href="/DeleteProduct" class="btn btn-danger btn-sm">Delete Product</a>                
+                <a asp-page="./EditProduct" asp-route-id="@p.ProductId" class="btn btn-primary btn-sm mr-10">Edit Product</a>            
+                <a asp-page="./DeleteProduct" asp-route-id="@p.ProductId" class="btn btn-danger btn-sm">Delete Product</a>                
                 </div>
             }
             </div>
