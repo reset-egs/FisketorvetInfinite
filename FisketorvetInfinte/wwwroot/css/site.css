@@ -325,7 +325,6 @@ label {
     padding-bottom: 7px;
     margin: 28px 0 0 0
 }
-
     .form-group .form-control {
         margin-bottom: 7px
     }
@@ -638,3 +637,14 @@ select.form-control {
         height: auto
     }
 
+.pic-padding{
+    padding:5px;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}

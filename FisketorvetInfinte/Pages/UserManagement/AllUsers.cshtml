@@ -2,42 +2,68 @@
 @model FisketorvetInfinte.Pages.UserManagement.AllUsersModel
 @{
 }
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Username</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Adress</th>
-      <th scope="col">Phone number</th>
-      <th scope="col">Administrator</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <<td>test</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>mdo</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
-    <tr>
-     <td>test</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>fat</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
-    <tr>
-      <td>test</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>twitter</td>
-      <td>test</td>
-      <td>test</td>
-    </tr>
-  </tbody>
-</table>
 
+<div class="table-responsive-sm">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Adress</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Administrator/User</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Address</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.Role</td>
+
+                    <td>
+                        <button class="btn btn-primary" asp-page="./EditUser" asp-route-username="@user.Username">Edit</button>
+                    <a asp-page="EditUser">Edit</a>
+                       
+                    </td>
+                    <td>
+                    <button asp-route-username="@user.Username" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteUserModal"  >Delete</button>
+              @*      <button type="button" class="btn btn-danger" asp-route-username="@user.Username"  >Delete</button>*@
+
+                   </td>
+                  </tr>
+
+                <!-- Modal -->
+                <form method="post" asp-page-handler="Delete"  >
+                    <div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Delete User</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <p>Are you sure you want to delete user:  </p>
+                                    <input class="form-control" label="Username" type="text" asp-for="@user.Username" readonly>
+                                    <hr>
+                                    <input class="form-control" label="Name" type="text" asp-for="@user.Name" readonly>
+                               
+                                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </form>
+   }
+      </tbody>
+   </table>

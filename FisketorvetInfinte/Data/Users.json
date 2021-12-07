@@ -10,23 +10,13 @@
     "Role": "admin"
   },
   {
-    "Username": "bartol",
+    "Username": "Bartol",
     "Password": "123",
     "ConfirmPassword": "123",
     "Name": "Bartol",
     "Address": null,
     "PhoneNumber": null,
     "Email": "bartol@barol.com",
-    "Role": "user"
-  },
-  {
-    "Username": "bartoltest",
-    "Password": "Testing",
-    "ConfirmPassword": "Testing",
-    "Name": "Bartol",
-    "Address": null,
-    "PhoneNumber": null,
-    "Email": "bartol@bartol",
     "Role": "user"
   }
 ]
