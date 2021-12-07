@@ -20,7 +20,7 @@ namespace FisketorvetInfinte.Pages
         public Index1Model(IUserService service)
         {
             UserService = service;
-        }   
+        }
 
         public void OnGet()
         {

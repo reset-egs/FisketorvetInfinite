@@ -14,9 +14,9 @@
     "Password": "123",
     "ConfirmPassword": "123",
     "Name": "Bartol",
-    "Address": "123",
-    "PhoneNumber": "12345678",
-    "Email": "bartol@bartol.com",
-    "Role": null
+    "Address": null,
+    "PhoneNumber": null,
+    "Email": "bartol@barol.com",
+    "Role": "user"
   }
 ]

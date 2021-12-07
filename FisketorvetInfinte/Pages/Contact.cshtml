@@ -1,0 +1,65 @@
+﻿@page
+@model FisketorvetInfinte.Pages.LocationModel
+topsection class="Material-contact-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">Contact Us</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-3 contact-widge-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <div class="find-widget">
+                    Website: <a href="https://www.fisketorvet.dk/">www.fisketorvet.dk</a>
+                </div>
+                <div class="find-widget">
+                    Address: <a href="#">Kalvebod Brygge 59, 1560 København</a>
+                </div>
+                <div class="find-widget">
+                    Opening hours: <a href="#">Mon to Sat: 10:00 - 20:00</a>
+                </div>
+                <div class="find-widget">
+                    Phone: <a href="#">+45 33 36 64 00</a>
+                </div>
+                <div style="padding-top: 20px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4501.005385644908!2d12.56230965430292!3d55.66285816847658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652536e13436971%3A0x635c2ebec53f3f72!2sFisketorvet!5e0!3m2!1sen!2sdk!4v1638878159666!5m2!1sen!2sdk" width="100%" height="310px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 wow">
+                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+
+                    <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <label for="message" class="control-label">Message</label>
+                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-submit mt-5">
+                        <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
