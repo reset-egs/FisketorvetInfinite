@@ -10,3 +10,4 @@ global using FisketorvetInfinte.Services;
 global using FisketorvetInfinte.Services.UserServices;
 global using FisketorvetInfinte.Services.ShopServices;
 global using FisketorvetInfinte.Services.StoreServices;
+global using System.ComponentModel.DataAnnotations.Schema;

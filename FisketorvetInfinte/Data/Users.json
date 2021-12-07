@@ -2,7 +2,7 @@
   {
     "Username": "abc",
     "Password": "123",
-    "ConfirmPassword": null,
+    "ConfirmPassword": "123",
     "Name": "Szymon",
     "Address": "Test",
     "PhoneNumber": "123",
@@ -10,43 +10,13 @@
     "Role": "admin"
   },
   {
-    "Username": "test",
-    "Password": "test",
-    "ConfirmPassword": null,
-    "Name": "test",
-    "Address": "test",
-    "PhoneNumber": "test",
-    "Email": "test",
+    "Username": "bartol",
+    "Password": "123",
+    "ConfirmPassword": "123",
+    "Name": "Bartol",
+    "Address": null,
+    "PhoneNumber": null,
+    "Email": "bartol@barol.com",
     "Role": "user"
-  },
-  {
-    "Username": "admin",
-    "Password": "admin",
-    "ConfirmPassword": null,
-    "Name": "test",
-    "Address": "test",
-    "PhoneNumber": "test",
-    "Email": "test",
-    "Role": "user"
-  },
-  {
-    "Username": "test",
-    "Password": "test",
-    "ConfirmPassword": "test",
-    "Name": "elo",
-    "Address": "el",
-    "PhoneNumber": "52",
-    "Email": "elo@onet.pl",
-    "Role": null
-  },
-  {
-    "Username": "test",
-    "Password": "dupa",
-    "ConfirmPassword": "dupa",
-    "Name": "elo",
-    "Address": "elo",
-    "PhoneNumber": "52",
-    "Email": "elo@onet.pl",
-    "Role": null
   }
 ]

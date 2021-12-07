@@ -1,50 +1,66 @@
 [
   {
     "ProductId": 1,
-    "Price": 199.90,
-    "Size": "M",
-    "Colour": "White"
+    "ProductName": "Jeans",
+    "ImageName": "bluejeans.png",
+    "Price": 232.0,
+    "Size": 0,
+    "Colour": 2
   },
   {
     "ProductId": 2,
-    "Price": 250,
-    "Size": "L",
-    "Colour": "Red"
+    "ProductName": "Jacket",
+    "ImageName": "jacket.png",
+    "Price": 232.0,
+    "Size": 0,
+    "Colour": 2
   },
   {
     "ProductId": 3,
-    "Price": 89.90,
-    "Size": "S",
-    "Colour": "Purple"
+    "ProductName": "Sweatshirt",
+    "ImageName": "sweatshirt.png",
+    "Price": 89.9,
+    "Size": 1,
+    "Colour": 7
   },
   {
     "ProductId": 4,
-    "Price": 148.20,
-    "Size": "XL",
-    "Colour": "Black"
+    "ProductName": "Socks",
+    "ImageName": "socks.png",
+    "Price": 148.2,
+    "Size": 4,
+    "Colour": 4
   },
   {
     "ProductId": 5,
+    "ProductName": "Hat",
+    "ImageName": "hat.png",
     "Price": 125.25,
-    "Size": "XS",
-    "Colour": "Green"
+    "Size": 0,
+    "Colour": 1
   },
   {
     "ProductId": 6,
-    "Price": 100,
-    "Size": "L",
-    "Colour": "Orange"
+    "ProductName": "T-Shirt",
+    "ImageName": "tshirt.png",
+    "Price": 100.0,
+    "Size": 3,
+    "Colour": 6
   },
   {
     "ProductId": 7,
-    "Price": 99.90,
-    "Size": "XXL",
-    "Colour": "Black"
+    "ProductName": "Jeans",
+    "ImageName": "blackjeans.png",
+    "Price": 99.9,
+    "Size": 5,
+    "Colour": 4
   },
   {
     "ProductId": 8,
-    "Price": 70.70,
-    "Size": "S",
-    "Colour": "Red"
+    "ProductName": "Bra",
+    "ImageName": "bra.png",
+    "Price": 70.7,
+    "Size": 1,
+    "Colour": 0
   }
 ]
