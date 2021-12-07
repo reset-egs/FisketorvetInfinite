@@ -18,5 +18,15 @@
     "PhoneNumber": null,
     "Email": "bartol@barol.com",
     "Role": "user"
+  },
+  {
+    "Username": "bartoltest",
+    "Password": "Testing",
+    "ConfirmPassword": "Testing",
+    "Name": "Bartol",
+    "Address": null,
+    "PhoneNumber": null,
+    "Email": "bartol@bartol",
+    "Role": "user"
   }
 ]
