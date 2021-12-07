@@ -6,6 +6,7 @@
 
 <form method="post">
     <div class="form-group">
+        <input class="form-control" type="text" placeholder="@Model.User.Username" readonly>
         <label asp-for="@Model.User.Name" class="control-label">Name </label>
         <input asp-for="@Model.User.Name" class="form-control" />
         <span asp-validation-for="@Model.User.Name" class="text-danger"></span>
@@ -27,16 +28,17 @@
     </div>
     <div>
         <label asp-for="@Model.User.Role" class="control-label">Role: </label>
-        <select class="form-control form-control-sm">
-            <option>Admin</option>
+        <select class="form-control">
+            <option selected>@Model.User.Role</option>
             <option>User</option>
+            <option>Admin</option>
         </select>
     </div>
     <p></p>
     <div>
         <button type="submit" value="Edit" class="btn btn-success">Save Changes</button>
         <button type="reset" class="btn btn-warning">Reset form</button>
-        <button type="button" href="/UserManagement/AllUsers" class="btn btn-danger">Cancel</button>
+        <a href="../Pages/UserManagement/AllUsers.cshtml" class="btn btn-danger">Cancel</a>
     </div>
 
 </form>

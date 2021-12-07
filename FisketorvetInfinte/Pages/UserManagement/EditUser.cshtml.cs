@@ -22,8 +22,13 @@ namespace FisketorvetInfinte.Pages.UserManagement
 
         public IActionResult OnPost()
         {
-            UserService.UpdateUser(User);
-            return RedirectToPage("./AllUsers");
+            if ((ModelState.GetFieldValidationState("Name") == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Valid)&&
+               (ModelState.GetFieldValidationState("Email") == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Valid))
+            {
+                UserService.UpdateUser(User);
+                return RedirectToPage("./AllUsers");
+            }
+            return Page();
         }
     }
 }

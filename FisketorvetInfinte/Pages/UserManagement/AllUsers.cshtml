@@ -1,7 +1,8 @@
-﻿@page
+﻿@page 
 @model FisketorvetInfinte.Pages.UserManagement.AllUsersModel
 @{
 }
+
 <div class="table-responsive-sm">
     <table class="table table-hover">
         <thead class="thead-dark">
@@ -26,38 +27,43 @@
                     <td>@user.Role</td>
 
                     <td>
-                        <a asp-page="/UserManagement/EditUser" asp-route-username="@user.Username">Edit</a>
+                        <button class="btn btn-primary" asp-page="./EditUser" asp-route-username="@user.Username">Edit</button>
+                    <a asp-page="EditUser">Edit</a>
+                       
                     </td>
-
                     <td>
-                        <a href="#" class="modal-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <button type="button" class="btn btn-danger">Delete</button>
-                        </a>
-                    </td>
-                </tr>
-            }
+                    <button asp-route-username="@user.Username" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteUserModal"  >Delete</button>
+              @*      <button type="button" class="btn btn-danger" asp-route-username="@user.Username"  >Delete</button>*@
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-heather">
-                            <h5 class="modal-title" style="text-align:center; width:500px;" id="exampleModalLabel">Delete User</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Are you sure you want to delete user @Model.User.Username</p>
-                        </div>
-                        <div class="modal-footer">
-                            <form asp-page-handler="delete" method="post">
-                            <button  type="submit" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" value="Delete" class="btn btn-danger" data-bs-dismiss="modal"> Delete </button></form>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Cancel </button>
+                   </td>
+                  </tr>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </tbody>
-    </table>
-</div>
+                <!-- Modal -->
+                <form method="post" asp-page-handler="Delete"  >
+                    <div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Delete User</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <p>Are you sure you want to delete user:  </p>
+                                    <input class="form-control" label="Username" type="text" asp-for="@user.Username" readonly>
+                                    <hr>
+                                    <input class="form-control" label="Name" type="text" asp-for="@user.Name" readonly>
+                               
+                                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </form>
+   }
+      </tbody>
+   </table>

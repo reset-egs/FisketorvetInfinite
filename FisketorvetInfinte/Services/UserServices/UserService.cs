@@ -63,14 +63,15 @@
         {
             if (u != null)
             {
-                foreach (var User in users)
+                foreach (var user in users)
                 {
-                    if (User.Username == u.Username)
+                    if (user.Username == u.Username)
                     {
-                        users.Remove(User);
+                        users.Remove(u);
                     }
                 }
             }
+            JsonFileUserService.WriteToJson(users, "./Data/Users.json");
         }
     }
 }

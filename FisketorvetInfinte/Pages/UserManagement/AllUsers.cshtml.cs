@@ -6,8 +6,12 @@ namespace FisketorvetInfinte.Pages.UserManagement
     public class AllUsersModel : PageModel
     {
         public IUserService UserService { get; set; }
+
+        [BindProperty]
         public User User { get; set; } = new User();
+      
         public List<User> Users { get; set; } = JsonFileUserService.ReadJson("./Data/Users.json"); 
+
         public AllUsersModel(IUserService service)
         {
             UserService = service;
@@ -16,12 +20,17 @@ namespace FisketorvetInfinte.Pages.UserManagement
         {
             Users = UserService.AllUsers();  
         }
- 
-        public IActionResult OnPostDelete(User User)
+
+        public IActionResult OnPostDelete()
         {
-            Users.Remove(User);
-            JsonFileUserService.WriteToJson(Users, "../Users.json");
-            return RedirectToPage("AllUsers");
+            if ( User.Username!=null)
+            {
+                UserService.DeleteUser(User);
+                
+                return RedirectToPage("AllUsers");
+            }
+            else return RedirectToPage("AllUsers");
         }
+        
     }
 }
