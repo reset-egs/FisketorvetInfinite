@@ -8,7 +8,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
         
         public IProductService _productService;
 
-        private Product _product = new Product();
+        public Product Product = new Product();
 
         public string Role { get; set; }
 
