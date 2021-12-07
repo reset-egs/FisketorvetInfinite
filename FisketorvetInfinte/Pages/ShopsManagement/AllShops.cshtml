@@ -14,9 +14,7 @@
             <div id="shopDiv">
 
             <a href="#" class="modal-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <h3>@shop.Name </h3> 
-            </a>
-
+            <h3>@shop.Name </h3> </a>
             <img src = "/images/@shop.ImageName"></img>
             <p>@shop.Category </p>
             <p>@shop.WorkHour</p>
@@ -30,11 +28,15 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" style="text-align:center; width:500px;" id="exampleModalLabel">@shop.Name</h5>
+        <h5 class="modal-title" style="text-align:center; width:700px;" id="exampleModalLabel">@shop.Name</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>@shop.Description</p>
+        <p style="text-align:center;">@shop.Description
+        <img class="pic-padding" src = "/images/@shop.Image1"></img>
+        <img class="pic-padding" src = "/images/@shop.Image2"></img>
+        <img class="pic-padding" src = "/images/@shop.Image3"></img>
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
