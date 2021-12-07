@@ -15,6 +15,8 @@ builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddTransient<JsonFileUserService>();
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<JsonFileEventService>();
+builder.Services.AddTransient<IEventService, EventService>();
 
 var app = builder.Build();
 
