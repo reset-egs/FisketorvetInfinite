@@ -39,14 +39,14 @@
             JsonFileUserService.WriteToJson(users, "./Data/Users.json");
         }
 
-        public void UpdateUser(User u)
+        public void UpdateUser(string Username, User u)
         {
             {
                 if (u != null)
 
                     foreach (var user in users)
                     {
-                        if (u.Username == user.Username)
+                        if (Username == user.Username)
                         {
                             user.Name = u.Name;
                             user.Address = u.Address;

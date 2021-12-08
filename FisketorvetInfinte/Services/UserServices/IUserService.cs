@@ -10,7 +10,7 @@
 
         List<User> AllUsers();
 
-        void UpdateUser(User u);
+        void UpdateUser(string Username, User u);
 
         void DeleteUser(User u);
     }

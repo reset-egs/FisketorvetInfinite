@@ -7,6 +7,7 @@ namespace FisketorvetInfinte.Pages.UserManagement
     {
         [BindProperty]
         public User User { get; set; } = new User();
+        public string Alert { get; set; }
 
         public IUserService UserService { get; set; }
 
@@ -20,13 +21,16 @@ namespace FisketorvetInfinte.Pages.UserManagement
             User = UserService.GetUser(username);
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(string Username, User u)
         {
-            if ((ModelState.GetFieldValidationState("Name") == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Valid)&&
-               (ModelState.GetFieldValidationState("Email") == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Valid))
+            if (Username!=null && User.Name != null && User.Email != null && User.Role != null)
             {
-                UserService.UpdateUser(User);
+                UserService.UpdateUser(Username, User);
                 return RedirectToPage("./AllUsers");
+            }
+            else
+            {
+                Alert = "Please fill all required fields.";
             }
             return Page();
         }

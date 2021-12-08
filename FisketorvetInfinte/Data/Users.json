@@ -5,18 +5,28 @@
     "ConfirmPassword": "123",
     "Name": "Szymon",
     "Address": "Test",
-    "PhoneNumber": "123",
-    "Email": "Test",
+    "PhoneNumber": "12345678",
+    "Email": "Test@t",
     "Role": "admin"
   },
   {
     "Username": "Bartol",
     "Password": "123",
     "ConfirmPassword": "123",
-    "Name": "Bartol",
-    "Address": "123",
+    "Name": "Test",
+    "Address": "1234",
     "PhoneNumber": "12345678",
-    "Email": "bartol@bartol.com",
-    "Role": null
+    "Email": "t@t",
+    "Role": "admin"
+  },
+  {
+    "Username": "bartolisthebest",
+    "Password": "123",
+    "ConfirmPassword": "123",
+    "Name": "Bartol Best",
+    "Address": "The best street 69",
+    "PhoneNumber": "42 00 69 69",
+    "Email": "bartol.the.best@best.com",
+    "Role": "admin"
   }
 ]
