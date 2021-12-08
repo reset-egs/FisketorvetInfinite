@@ -9,11 +9,11 @@ namespace FisketorvetInfinte.Pages.EventManagement
             _eventService = service;
         }
 
-        public string FilterCriteria { get; set; }
+        public string? FilterCriteria { get; set; }
 
-        public List<Event> Events { get; set; }
+        public List<Event>? Events { get; set; }
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public void OnGet()
         {

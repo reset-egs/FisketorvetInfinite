@@ -6,7 +6,7 @@ namespace FisketorvetInfinte.Pages
     public class CreateShopModel : PageModel
     {
 
-        public Shop Shop { get; set; }
+        public Shop? Shop { get; set; }
 
         public IShopService ShopService { get; set; }
 

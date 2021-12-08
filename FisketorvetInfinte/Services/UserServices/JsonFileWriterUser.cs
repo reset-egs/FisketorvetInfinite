@@ -2,10 +2,10 @@
 {
     public class JsonFileWriterUser
     {
-        public static void WriteToJson (List<User> users, string jsonFilePath)
+        public static void WriteToJson(List<User> users, string jsonFilePath)
         {
-            string output = JsonConvert.SerializeObject (users, Formatting.Indented);
-            File.WriteAllText (jsonFilePath, output);
+            string output = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText(jsonFilePath, output);
         }
     }
 }

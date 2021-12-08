@@ -7,7 +7,7 @@ namespace FisketorvetInfinte.Pages.UserManagement
     {
         [BindProperty]
         public User User { get; set; } = new User();
-        public string Alert { get; set; }
+        public string? Alert { get; set; }
 
         public IUserService UserService { get; set; }
 

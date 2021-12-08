@@ -3,10 +3,10 @@
     "Username": "abc",
     "Password": "123",
     "ConfirmPassword": "123",
-    "Name": "Szymon",
+    "Name": "Admin Account",
     "Address": "Test",
-    "PhoneNumber": "12345678",
-    "Email": "Test@t",
+    "PhoneNumber": "12 34 56 78",
+    "Email": "admin@account.com",
     "Role": "admin"
   },
   {
@@ -17,6 +17,6 @@
     "Address": "The best street 69",
     "PhoneNumber": "42 00 69 69",
     "Email": "bartol.the.best@best.com",
-    "Role": "admin"
+    "Role": "user"
   }
 ]

@@ -15,7 +15,7 @@ namespace FisketorvetInfinte.Pages.EventManagement
         [BindProperty]
         public Event Event { get; set; } = new Event();
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public void OnGet()
         {

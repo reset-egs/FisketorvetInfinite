@@ -2,7 +2,7 @@
 {
     public interface IUserService
     {
-        User GetUser(string username);  
+        User GetUser(string username);
 
         User FindUser(string username);
 

@@ -1,17 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using static FisketorvetInfinte.Models.Product;
-
 namespace FisketorvetInfinte.Pages.ShopsManagement
 {
     public class CreateProductModel : PageModel
     {
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         [BindProperty]
         public Product Product { get; set; } = new Product();
-    
-        public Image Image { get; set; }
+
+        public Image? Image { get; set; }
 
         public IProductService _productService;
 
@@ -19,7 +15,6 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
         {
             _productService = service;
         }
-
 
         public void OnGet()
         {

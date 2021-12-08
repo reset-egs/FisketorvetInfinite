@@ -3,17 +3,17 @@ namespace FisketorvetInfinte.Pages
     public class Index1Model : PageModel
     {
         [BindProperty]
-        public User User { get; set; }
+        public User? User { get; set; }
 
         [BindProperty]
-        public string Username { get; set; }
+        public string? Username { get; set; }
 
         [BindProperty]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
-        public string Msg { get; set; }
+        public string? Msg { get; set; }
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public IUserService UserService { get; set; }
 

@@ -21,7 +21,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
             set => _product = value;
         }
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public void OnGet(int id)
         {
@@ -36,7 +36,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
                 _productService.UpdateProduct(Product);
                 return RedirectToPage("./Store");
             }
-            return Page();  
+            return Page();
         }
     }
 }

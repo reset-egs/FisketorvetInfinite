@@ -26,9 +26,9 @@
         {
             if (product != null)
             {
-                foreach(var p in AllProducts)
+                foreach (var p in AllProducts)
                 {
-                    if(p.ProductId == product.ProductId)
+                    if (p.ProductId == product.ProductId)
                     {
                         p.ProductName = product.ProductName;
                         p.Price = product.Price;
@@ -44,9 +44,9 @@
         {
             if (product != null)
             {
-                foreach(var p in AllProducts)
+                foreach (var p in AllProducts)
                 {
-                    if(product.ProductId == p.ProductId)
+                    if (product.ProductId == p.ProductId)
                     {
                         AllProducts.Remove(product);
                         break;

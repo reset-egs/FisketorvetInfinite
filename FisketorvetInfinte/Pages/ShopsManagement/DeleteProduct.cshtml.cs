@@ -2,12 +2,12 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
 {
     public class DeleteProductModel : PageModel
     {
-        
+
         public IProductService _productService;
 
         public Product Product = new Product();
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public DeleteProductModel(IProductService service)
         {
@@ -24,7 +24,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
         {
             Product = _productService.FindProduct(id);
             _productService.DeleteProduct(Product);
-                return RedirectToPage("./Store");
+            return RedirectToPage("./Store");
         }
     }
 }

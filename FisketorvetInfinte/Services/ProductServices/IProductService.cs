@@ -3,13 +3,13 @@
     public interface IProductService
     {
         List<Product> AllProducts { get; }
-        
-        Product FindProduct (int productId);
 
-        void AddProduct (Product product);
+        Product FindProduct(int productId);
 
-        void UpdateProduct (Product product);
+        void AddProduct(Product product);
 
-        void DeleteProduct (Product product);
+        void UpdateProduct(Product product);
+
+        void DeleteProduct(Product product);
     }
 }

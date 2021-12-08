@@ -6,9 +6,9 @@
 
         public Event FindEvent(int id)
         {
-            foreach(var e in AllEvents)
+            foreach (var e in AllEvents)
             {
-                if(e.Id == id)
+                if (e.Id == id)
                 {
                     return e;
                 }
@@ -16,14 +16,14 @@
             return null;
         }
 
-        public void AddEvent (Event e)
+        public void AddEvent(Event e)
         {
             List<int> eventIds = new List<int>();
-            foreach(var evt in AllEvents)
+            foreach (var evt in AllEvents)
             {
                 eventIds.Add(evt.Id);
             }
-            if(eventIds.Count != 0)
+            if (eventIds.Count != 0)
             {
                 int start = eventIds.Max();
                 e.Id = start + 1;
@@ -36,13 +36,13 @@
             JsonFileEventService.WriteToJson(AllEvents, "./Data/Events.json");
         }
 
-        public void UpdateEvent (Event ev)
+        public void UpdateEvent(Event ev)
         {
-            if(ev != null)
+            if (ev != null)
             {
-                foreach(var e in AllEvents)
+                foreach (var e in AllEvents)
                 {
-                    if(e.Id == ev.Id)
+                    if (e.Id == ev.Id)
                     {
                         e.Name = ev.Name;
                         e.Description = ev.Description;
@@ -53,7 +53,7 @@
             JsonFileEventService.WriteToJson(AllEvents, "./Data/Events.json");
         }
 
-        public void RemoveEvent (Event e)
+        public void RemoveEvent(Event e)
         {
             if (e != null)
             {

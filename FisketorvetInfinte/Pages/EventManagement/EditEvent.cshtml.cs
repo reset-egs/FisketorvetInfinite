@@ -9,7 +9,7 @@ namespace FisketorvetInfinte.Pages.EventManagement
             _eventService = service;
         }
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         [BindProperty]
         public Event Event { get; set; } = new Event();

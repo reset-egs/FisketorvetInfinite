@@ -9,11 +9,11 @@ namespace FisketorvetInfinte.Pages.Shops
             _productService = service;
         }
 
-        public List<Product> Products { get; set; }
+        public List<Product>? Products { get; set; }
 
-        public Product Product { get; set; } = new Product();
+        public Product? Product { get; set; } = new Product();
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public void OnGet()
         {

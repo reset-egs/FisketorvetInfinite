@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
-{ 
+{
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });

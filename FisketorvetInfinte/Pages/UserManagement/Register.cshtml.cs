@@ -9,12 +9,11 @@ namespace FisketorvetInfinte.Pages
         public User User { get; set; } = new User();
 
         [BindProperty]
-        public string Username { get; set; }
+        public string? Username { get; set; }
 
-        public string Msg { get; set; }
+        public string? Msg { get; set; }
 
-        public string Role { get; set; }
-
+        public string? Role { get; set; }
 
         public IUserService UserService { get; set; }
 
