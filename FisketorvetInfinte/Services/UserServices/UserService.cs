@@ -68,7 +68,10 @@
                     if (user.Username == u.Username)
                     {
                         users.Remove(u);
+                        break;
                     }
+
+                    
                 }
             }
             JsonFileUserService.WriteToJson(users, "./Data/Users.json");

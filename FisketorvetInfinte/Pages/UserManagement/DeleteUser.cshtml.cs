@@ -13,17 +13,17 @@ namespace FisketorvetInfinte.Pages.UserManagement
         }
 
         public string? Role { get; set; }
-
+        [BindProperty]
         public User? User { get; set; }
-        public void OnGet(string user)
+        public void OnGet(string username)
         {
             Role = HttpContext.Session.GetString("role");
-            User = _userService.FindUser(user);
+            User = _userService.FindUser(username);
         }
 
-        public IActionResult OnPost(string user)
+        public IActionResult OnPost(string username)
         {
-            User = _userService.FindUser(user);
+            User = _userService.FindUser(username);
             _userService.DeleteUser(User);
             return RedirectToPage("AllUsers");
         }
