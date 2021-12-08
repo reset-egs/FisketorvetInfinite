@@ -12,10 +12,15 @@
     <header>
         <nav class="navbar navbar-nav navbar-light bg-white border-left  mb-3 fixed-top">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">FisketorvetInfinte</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
              
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="navbar-brand" asp-page="/Index">
+                            <img src="../images/logo.png" class="img-fluid" />    
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
@@ -23,10 +28,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/AllShops">Shops</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Shop</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/EventManagement/AllEvents">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/AllUsers">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="Parking">Parking</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Login">Log In</a>
@@ -48,7 +62,7 @@
 
     <footer class="border-top footer text-muted padding-left">
         <div class="container">
-            &copy; 2021 - FisketorvetInfinte - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2021 - FisketorvetInfinte - <a asp-area="" asp-page="/Information">About Us</a>
         </div>
     </footer>
 

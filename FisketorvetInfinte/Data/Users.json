@@ -10,16 +10,6 @@
     "Role": "admin"
   },
   {
-    "Username": "Bartol",
-    "Password": "123",
-    "ConfirmPassword": "123",
-    "Name": "Test",
-    "Address": "1234",
-    "PhoneNumber": "12345678",
-    "Email": "t@t",
-    "Role": "admin"
-  },
-  {
     "Username": "bartolisthebest",
     "Password": "123",
     "ConfirmPassword": "123",
