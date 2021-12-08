@@ -9,9 +9,11 @@ namespace FisketorvetInfinte.Pages
         {
             _shopService = service;
         }
-
+        [BindProperty]
+        public int I { get; set; }
         public List<Shop> Shops { get; set; }
-
+       
+        public Shop Shop { get; set; }
         
 
         public void OnGet()

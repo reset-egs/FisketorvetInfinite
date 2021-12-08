@@ -5,18 +5,18 @@
     "ConfirmPassword": "123",
     "Name": "Szymon",
     "Address": "Test",
-    "PhoneNumber": "123",
-    "Email": "Test",
+    "PhoneNumber": "12345678",
+    "Email": "Test@t",
     "Role": "admin"
   },
   {
-    "Username": "Bartol",
+    "Username": "bartolisthebest",
     "Password": "123",
     "ConfirmPassword": "123",
-    "Name": "Bartol",
-    "Address": null,
-    "PhoneNumber": null,
-    "Email": "bartol@barol.com",
-    "Role": "user"
+    "Name": "Bartol Best",
+    "Address": "The best street 69",
+    "PhoneNumber": "42 00 69 69",
+    "Email": "bartol.the.best@best.com",
+    "Role": "admin"
   }
 ]
