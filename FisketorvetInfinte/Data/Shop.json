@@ -46,29 +46,5 @@
     "Image1": "bent1.jfif",
     "Image2": "bent2.jfif",
     "Image3": "bent3.jfif"
-  },
-  {
-    "ShopId": 5,
-    "ImageName": null,
-    "Name": "Test",
-    "Category": "Test",
-    "WorkHour": null,
-    "PhoneNumber": "12345678",
-    "Description": null,
-    "Image1": null,
-    "Image2": null,
-    "Image3": null
-  },
-  {
-    "ShopId": 6,
-    "ImageName": null,
-    "Name": "Test",
-    "Category": "Test",
-    "WorkHour": "test",
-    "PhoneNumber": "12345678",
-    "Description": null,
-    "Image1": null,
-    "Image2": null,
-    "Image3": null
   }
 ]

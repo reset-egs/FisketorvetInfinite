@@ -1,11 +1,8 @@
 ﻿@page
 @model FisketorvetInfinte.Pages.WelcomeModel
 @{
-    if(Model.Role == "admin")
-    {
-        Layout = "_AdminLayout";
-    }
 }
+
 @if(Model.Role == "admin")
 {
     <h1>Welcome admin user!</h1>
