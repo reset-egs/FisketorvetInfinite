@@ -1,5 +1,6 @@
 ﻿namespace FisketorvetInfinte.Models
 {
+    //Not used in code currently
     public class Image
     {
         public string? Path { get; set; }

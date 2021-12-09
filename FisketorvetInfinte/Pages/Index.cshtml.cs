@@ -9,11 +9,9 @@
             _logger = logger;
         }
 
-        public string Role { get; set; }
-
         public void OnGet()
         {
-            Role = HttpContext.Session.GetString("role");
+
         }
     }
 }

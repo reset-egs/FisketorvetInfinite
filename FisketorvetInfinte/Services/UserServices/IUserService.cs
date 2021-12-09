@@ -2,8 +2,6 @@
 {
     public interface IUserService
     {
-        User GetUser(string username);
-
         User FindUser(string username);
 
         void AddUser(User u);

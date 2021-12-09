@@ -15,11 +15,9 @@ namespace FisketorvetInfinte.Pages.EventManagement
         [BindProperty]
         public Event Event { get; set; } = new Event();
 
-        public string? Role { get; set; }
-
         public void OnGet()
         {
-            Role = HttpContext.Session.GetString("role");
+
         }
 
         public IActionResult OnPost()

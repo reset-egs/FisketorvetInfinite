@@ -2,7 +2,6 @@ namespace FisketorvetInfinte.Pages
 {
     public class RegisterModel : PageModel
     {
-       
         [BindProperty]
         public UserViewModel User { get; set; } = new UserViewModel();
 
@@ -10,8 +9,6 @@ namespace FisketorvetInfinte.Pages
         public string? Username { get; set; }
 
         public string? Msg { get; set; }
-
-        public string? Role { get; set; }
 
         public IUserService UserService { get; set; }
 
@@ -22,7 +19,7 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
-            Role = HttpContext.Session.GetString("role");
+
         }
 
         public IActionResult OnPost()

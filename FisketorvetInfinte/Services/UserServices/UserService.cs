@@ -4,18 +4,6 @@
     {
         List<User> users = JsonFileUserService.ReadJson("./Data/Users.json");
 
-        public User GetUser(string Username)
-        {
-            foreach (var User in users)
-            {
-                if (User.Username == Username)
-                {
-                    return User;
-                }
-            }
-            return null;
-        }
-
         public List<User> AllUsers()
         {
             return users;

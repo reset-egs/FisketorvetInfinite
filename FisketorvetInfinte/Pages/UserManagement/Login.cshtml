@@ -2,7 +2,6 @@
 @model FisketorvetInfinte.Pages.Index1Model
 @{
 }
-
 <body>
     <h1>Log In</h1>
 
@@ -17,7 +16,6 @@
             <input asp-for="@Model.Username" placeholder="Input your username" class="form-control" />
             <span asp-validation-for="@Model.User.Username" class="text-danger"></span>
         </div>
-
         <div class="form-group">
             <label asp-for="@Model.Password" class="control-label"><b>Password:</b></label>
             <input asp-for="@Model.Password" type="password" placeholder="Input your password" class="form-control" />

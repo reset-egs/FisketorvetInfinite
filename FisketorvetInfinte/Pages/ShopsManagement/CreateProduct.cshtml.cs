@@ -2,8 +2,6 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
 {
     public class CreateProductModel : PageModel
     {
-        public string? Role { get; set; }
-
         [BindProperty]
         public Product Product { get; set; } = new Product();
 
@@ -18,7 +16,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
 
         public void OnGet()
         {
-            Role = HttpContext.Session.GetString("role");
+          
         }
 
         public IActionResult OnPost()

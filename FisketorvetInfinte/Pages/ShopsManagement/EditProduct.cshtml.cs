@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages.ShopsManagement
 {
     public class EditProductModel : PageModel
@@ -21,11 +18,8 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
             set => _product = value;
         }
 
-        public string? Role { get; set; }
-
         public void OnGet(int id)
         {
-            Role = HttpContext.Session.GetString("role");
             Product = _productService.FindProduct(id);
         }
 

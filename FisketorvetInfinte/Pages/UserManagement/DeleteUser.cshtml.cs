@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages.UserManagement
 {
     public class DeleteUserModel : PageModel
@@ -12,12 +9,10 @@ namespace FisketorvetInfinte.Pages.UserManagement
             _userService = service;
         }
 
-        public string? Role { get; set; }
         [BindProperty]
         public User? User { get; set; }
         public void OnGet(string username)
         {
-            Role = HttpContext.Session.GetString("role");
             User = _userService.FindUser(username);
         }
 

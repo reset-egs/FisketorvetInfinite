@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages.ShopsManagement
 {
     public class DeleteShopModel : PageModel
@@ -11,7 +8,7 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
         {
             ShopService = service;
         }
-        public string? Role { get; set; }
+
         public Shop Shop { get; set; }
 
         public void OnGet(int shopId)

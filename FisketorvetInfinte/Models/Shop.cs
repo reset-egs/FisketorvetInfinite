@@ -11,8 +11,6 @@
 
         public string? Category { get; set; }
       
-        //[Required]
-        //[RegularExpression("^([0 - 1]?[0 - 9] | 2[0 - 3]):[0-5] [0-9]$[-]?^([0 - 1]?[0 - 9]|2[0-3]):[0-5] [0-9]$", ErrorMessage="Opening hours should be in format hh:mm - hh:mm")]
         public string? WorkHour { get; set; }
       
         public string? PhoneNumber { get; set; }

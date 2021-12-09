@@ -38,7 +38,7 @@
         <label asp-for="@Model.User.Role" class="control-label">Role: </label>
         <select asp-for="@Model.User.Role" class="form-control" placeholder="(Required)e">
             <option selected>@Model.User.Role</option>
-
+            
             @if (Model.User.Role == "user")
             {
                 <option>admin</option>

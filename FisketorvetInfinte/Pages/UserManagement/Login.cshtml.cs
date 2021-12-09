@@ -13,8 +13,6 @@ namespace FisketorvetInfinte.Pages
 
         public string? Msg { get; set; }
 
-        public string? Role { get; set; }
-
         public IUserService UserService { get; set; }
 
         public Index1Model(IUserService service)
@@ -24,7 +22,7 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
-            Role = HttpContext.Session.GetString("role");
+
         }
 
         public IActionResult OnPost()

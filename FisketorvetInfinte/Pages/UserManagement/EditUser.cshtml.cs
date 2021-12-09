@@ -1,12 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages.UserManagement
 {
     public class EditUserModel : PageModel
     {
         [BindProperty]
         public User User { get; set; } = new User();
+
         public string? Alert { get; set; }
 
         public IUserService UserService { get; set; }
@@ -18,7 +16,7 @@ namespace FisketorvetInfinte.Pages.UserManagement
 
         public void OnGet(string username)
         {
-            User = UserService.GetUser(username);
+            User = UserService.FindUser(username);
         }
 
         public IActionResult OnPost(string Username, User u)

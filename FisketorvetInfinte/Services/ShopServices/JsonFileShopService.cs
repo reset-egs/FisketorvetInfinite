@@ -12,7 +12,5 @@
             string output = JsonConvert.SerializeObject(shops, Formatting.Indented);
             File.WriteAllText(jsonFilePath, output);
         }
-
-        
     }
 }

@@ -18,11 +18,8 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
             set => shop = value;
         }
 
-        public string? Role { get; set; }
-
         public void OnGet(int ShopId)
         {
-            Role = HttpContext.Session.GetString("role");
             Shop = shopService.FindShop(ShopId);
         }
 

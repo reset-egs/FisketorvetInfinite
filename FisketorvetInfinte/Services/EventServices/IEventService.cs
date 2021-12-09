@@ -11,6 +11,5 @@
         void UpdateEvent(Event e);
 
         void RemoveEvent(Event e);
-       
     }
 }

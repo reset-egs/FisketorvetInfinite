@@ -9,13 +9,10 @@ namespace FisketorvetInfinte.Pages.EventManagement
             _eventService = service;
         }
 
-        public string? Role { get; set; }
-
         public Event? Event { get; set; }
 
         public void OnGet(int id)
         {
-            Role = HttpContext.Session.GetString("role");
             Event = _eventService.FindEvent(id);
         }
 

@@ -7,8 +7,6 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
 
         public Product Product = new Product();
 
-        public string? Role { get; set; }
-
         public DeleteProductModel(IProductService service)
         {
             _productService = service;
@@ -16,7 +14,6 @@ namespace FisketorvetInfinte.Pages.ShopsManagement
 
         public void OnGet(int id)
         {
-            Role = HttpContext.Session.GetString("role");
             Product = _productService.FindProduct(id);
         }
 

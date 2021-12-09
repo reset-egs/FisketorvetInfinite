@@ -1,11 +1,20 @@
 [
   {
-    "Username": "abc",
-    "Password": "123",
+    "Username": "admin",
+    "Password": "admin123",
     "Name": "Admin",
-    "Address": "Admin Street",
+    "Address": "Privilege Street",
     "PhoneNumber": "43657890",
     "Email": "admin@admin.com",
     "Role": "admin"
+  },
+  {
+    "Username": "user",
+    "Password": "user123",
+    "Name": "Normal User",
+    "Address": "Peasant Street",
+    "PhoneNumber": "45694202",
+    "Email": "user@user.com",
+    "Role": "user"
   }
 ]
