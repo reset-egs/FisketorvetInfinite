@@ -70,6 +70,8 @@
                         users.Remove(u);
                         break;
                     }
+
+                    
                 }
             }
             JsonFileUserService.WriteToJson(users, "./Data/Users.json");

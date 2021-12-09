@@ -13,13 +13,12 @@ namespace FisketorvetInfinte.Pages.UserManagement
         }
 
         public string? Role { get; set; }
-
-        [BindProperty(SupportsGet =true)]
-        public User User { get; set; } = new User();
+        [BindProperty]
+        public User? User { get; set; }
         public void OnGet(string username)
         {
             Role = HttpContext.Session.GetString("role");
-            User = _userService.GetUser(username);
+            User = _userService.FindUser(username);
         }
 
         public IActionResult OnPost(string username)
