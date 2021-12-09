@@ -8,13 +8,14 @@ namespace FisketorvetInfinte.Pages
         {
             _shopService = service;
         }
-
+        public string? Role { get; set; }
         public List<Shop>? Shops { get; set; }
 
         public Shop? Shop { get; set; }
 
         public void OnGet()
         {
+            Role = HttpContext.Session.GetString("role");
             Shops = JsonFileShopService.ReadJson("./Data/Shop.json");
         }
     }

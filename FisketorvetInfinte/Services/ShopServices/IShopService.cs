@@ -2,12 +2,13 @@
 {
     public interface IShopService
     {
-        //public Shop GetShop(int id);
+        List<Shop> AllShops { get; }
+        public Shop FindShop(int id);
 
-        //void AddShop(Shop shop);
+        void AddShop(Shop shop);
 
-        //public void UpdateShop(Shop shop);
+        public void UpdateShop(Shop shop);
 
-        //void DeleteShop(int id);
+        void DeleteShop(Shop shop);
     }
 }

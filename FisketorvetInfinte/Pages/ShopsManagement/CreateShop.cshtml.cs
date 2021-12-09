@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+
 namespace FisketorvetInfinte.Pages
 {
     public class CreateShopModel : PageModel
     {
 
-        public Shop? Shop { get; set; }
+        [BindProperty]
+        public Shop? Shop { get; set; } = new Shop();
 
         public IShopService ShopService { get; set; }
 
@@ -17,6 +19,15 @@ namespace FisketorvetInfinte.Pages
 
         public void OnGet()
         {
+        }
+        public IActionResult OnPost(Shop shop)
+        {
+            if (ModelState.IsValid)
+            {
+                ShopService.AddShop(Shop);
+                return RedirectToPage("./AllShops");
+            }
+            return Page();
         }
     }
 }

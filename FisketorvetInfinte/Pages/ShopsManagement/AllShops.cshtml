@@ -2,50 +2,47 @@
 @model FisketorvetInfinte.Pages.AllShopsModel
 @{
 }
-
+@{
+    if (Model.Role == "admin")
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
 <header id="headerShop">Fisketorvet shops</header>
+@{
+    if (Model.Role == "admin")
+    {
+        <a href="/ShopsManagement/CreateShop" class="btn btn-success">Add new Shop</a>
+    }
+}
 
-<a asp-page="/CreateShop"> Add new shop</a>
 
 <div id="divMasterShop">
 
     @foreach (var shop in Model.Shops)
     {
-
         <div id="shopDiv">
 
-            <a href="#" class="modal-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <h3>@shop.Name </h3>
-                <img src="/images/@shop.ImageName" />
-                <p>@shop.Category </p>
-                <p>@shop.WorkHour</p>
-                <p>@shop.PhoneNumber</p>
-            </a>
-
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" style="text-align:center; width:700px;" id="exampleModalLabel">@shop.Name</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p style="text-align:center;">
-                            @shop.Description
-                            <img class="pic-padding" src="/images/@shop.Image1" />
-                            <img class="pic-padding" src="/images/@shop.Image2" />
-                            <img class="pic-padding" src="/images/@shop.Image3" />
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <a asp-page="ShopInfo" asp-route-shopId="@shop.ShopId">
+                <td>
+                   
+            </td>
+            <h3>@shop.Name </h3>
+            <img src="/images/@shop.ImageName" />
+            <p>@shop.Category </p>
+            <p>@shop.WorkHour</p>
+            <p>@shop.PhoneNumber</p>
+              @if (Model.Role == "admin")
+                    {
+                    <a asp-page="EditShop" asp-route-shopId="@shop.ShopId" class="btn btn-primary">Edit</a>
+                    <a asp-page = "DeleteShop" asp-route-shopId = "@shop.ShopId" class="btn btn-danger">Delete</a>
+                    }
+        </a>
+       
+    </div>
     }
 </div>
