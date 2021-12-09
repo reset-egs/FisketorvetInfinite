@@ -12,3 +12,4 @@ global using FisketorvetInfinte.Services.ShopServices;
 global using FisketorvetInfinte.Services.StoreServices;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using FisketorvetInfinte.Services.EventServices;
+global using FisketorvetInfinte.ViewModels;

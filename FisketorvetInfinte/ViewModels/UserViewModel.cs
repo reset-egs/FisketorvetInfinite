@@ -1,12 +1,16 @@
-﻿namespace FisketorvetInfinte.Models
+﻿namespace FisketorvetInfinte.ViewModels
 {
-    public class User
+    public class UserViewModel
     {
         public string? Username { get; set; }
 
         [Required(ErrorMessage = "Valid password is required.")]
         [DataType(DataType.Password)]
         public string? Password { get; set; }
+
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "The passwords do not match.")]
+        public string? ConfirmPassword { get; set; }
 
         [Required(ErrorMessage = "The name is required")]
         public string? Name { get; set; }
