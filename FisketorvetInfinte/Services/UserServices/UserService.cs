@@ -65,9 +65,10 @@
             {
                 foreach (var user in users)
                 {
-                    if (user.Username == u.Username)
+                    if (u.Username == user.Username)
                     {
                         users.Remove(u);
+                        break;
                     }
                 }
             }
