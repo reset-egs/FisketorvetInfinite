@@ -10,7 +10,7 @@
 </head>
 
 @{
-    string role = Context.Session.GetString("role");
+    string? role = Context.Session.GetString("role");
 }
 
 <body>
@@ -19,91 +19,62 @@
             <div class="container">
                 <a class="navbar-brand" asp-page="/Index"></a>
                 <div class=" d-sm-inline-flex justify-content-between">
+
+                    <!--All Users-->
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="navbar-brand" asp-page="/Index">
                                 <img src="../images/logo.png" class="img-fluid" />
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/AllShops">Shops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/EventManagement/AllEvents">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="Parking">Parking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact Us</a>
+                        </li>
 
-                        @if (role == "admin")
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/AllShops">Shops</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Store</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/EventManagement/AllEvents">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/AllUsers">Users</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="Parking">Parking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Logout">Log Out</a>
-                            </li>
-                        }
 
-                        else if (role == "user")
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/AllShops">Shops</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Store</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/EventManagement/AllEvents">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Parking">Parking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Logout">Log Out</a>
-                            </li>
-                        }
+                            @if (role == "admin")
+                            {
+                                <li class="nav-item">
+                                    <p></p>
+                                    <a><strong>Admin Panel:</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/AllUsers">Users</a>
+                                </li>
 
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/AllShops">Shops</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/ShopsManagement/Store">Online Store</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/EventManagement/AllEvents">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Parking">Parking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Login">Log In</a>
-                            </li>
-                        }
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Logout">Log Out</a>
+                                </li>
+                            }
 
+                            else if (role == "user")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Logout">Log Out</a>
+                                </li>
+                            }
+
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/UserManagement/Login">Log In</a>
+                                </li>
+                            }
                     </ul>
                 </div>
             </div>
