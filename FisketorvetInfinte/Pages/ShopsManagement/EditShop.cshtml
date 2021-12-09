@@ -1,0 +1,56 @@
+﻿@page "{shopId}"
+@model FisketorvetInfinte.Pages.ShopsManagement.EditShopModel
+@{
+}
+@{
+    if (Model.Role == "admin")
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Shop.ShopId" class="control-label">ID</label>
+        <input asp-for="@Model.Shop.ShopId" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Shop.Name" class="control-label">Name</label>
+        <input asp-for="@Model.Shop.Name" class="form-control" />
+        <span asp-validation-for="@Model.Shop.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Shop.Category" class="control-label">Category</label>
+        <input asp-for="@Model.Shop.Category" class="form-control" />
+        <span asp-validation-for="@Model.Shop.Category" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Shop.WorkHour" class="control-label">Working hours</label>
+        <input asp-for="@Model.Shop.WorkHour" class="form-control" placeholder="hh:mm - hh:mm" />
+        <span asp-validation-for="@Model.Shop.WorkHour" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Shop.PhoneNumber" class="control-label">Phone Number</label>
+        <input asp-for="@Model.Shop.PhoneNumber" class="form-control" />
+        <span asp-validation-for="@Model.Shop.PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Shop.Description" class="control-label">Description</label>
+        <textarea rows="4" cols="50" name="description" form="usrform"> Enter description here...</textarea>
+        <input asp-for="@Model.Shop.Description" class="form-control" />
+        <span asp-validation-for="@Model.Shop.Description" class="text-danger"></span>
+    </div>
+
+    <div>
+        <div>
+            <button type="submit" value="Edit" class="btn btn-success">Save Changes</button>
+            <button type="reset" class="btn btn-warning">Reset form</button>
+            <a asp-page="AllShops" class="btn btn-danger">Cancel</a>
+        </div>
+    </div>
+</form>
