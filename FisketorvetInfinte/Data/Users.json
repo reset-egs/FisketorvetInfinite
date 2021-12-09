@@ -2,10 +2,10 @@
   {
     "Username": "abc",
     "Password": "123",
-    "Name": "Admin Account",
-    "Address": "Test",
-    "PhoneNumber": "12 34 56 78",
-    "Email": "admin@account.com",
+    "Name": "Admin",
+    "Address": "Admin Street",
+    "PhoneNumber": "43657890",
+    "Email": "admin@admin.com",
     "Role": "admin"
   },
   {
@@ -15,15 +15,6 @@
     "Address": "The best street 69",
     "PhoneNumber": "42 00 69 69",
     "Email": "bartol.the.best@best.com",
-    "Role": "user"
-  },
-  {
-    "Username": "tester",
-    "Password": "1234",
-    "Name": "elo",
-    "Address": "elo",
-    "PhoneNumber": "42",
-    "Email": "elo@onet.pl",
     "Role": "user"
   }
 ]
