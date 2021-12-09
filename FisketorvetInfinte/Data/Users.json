@@ -2,7 +2,6 @@
   {
     "Username": "abc",
     "Password": "123",
-    "ConfirmPassword": "123",
     "Name": "Admin Account",
     "Address": "Test",
     "PhoneNumber": "12 34 56 78",
@@ -12,11 +11,19 @@
   {
     "Username": "bartolisthebest",
     "Password": "123",
-    "ConfirmPassword": "123",
     "Name": "Bartol Best",
     "Address": "The best street 69",
     "PhoneNumber": "42 00 69 69",
     "Email": "bartol.the.best@best.com",
+    "Role": "user"
+  },
+  {
+    "Username": "tester",
+    "Password": "1234",
+    "Name": "elo",
+    "Address": "elo",
+    "PhoneNumber": "42",
+    "Email": "elo@onet.pl",
     "Role": "user"
   }
 ]

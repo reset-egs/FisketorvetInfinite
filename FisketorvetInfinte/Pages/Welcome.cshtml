@@ -6,5 +6,13 @@
         Layout = "_AdminLayout";
     }
 }
-<h1>Welcome!</h1>
-<h3>You are now logged in and can proceed to use Our website.</h3>
+@if(Model.Role == "admin")
+{
+    <h1>Welcome admin user!</h1>
+    <h3>You are now logged in and can proceed to use Our website.</h3>
+}
+else
+{
+    <h1>Welcome normal user!</h1>
+    <h3>You are now logged in and can proceed to use Our website.</h3>
+}

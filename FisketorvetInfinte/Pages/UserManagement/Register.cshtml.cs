@@ -1,12 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace FisketorvetInfinte.Pages
 {
     public class RegisterModel : PageModel
     {
+       
         [BindProperty]
-        public User User { get; set; } = new User();
+        public UserViewModel User { get; set; } = new UserViewModel();
 
         [BindProperty]
         public string? Username { get; set; }
@@ -37,8 +35,15 @@ namespace FisketorvetInfinte.Pages
 
                     if (ModelState.IsValid)
                     {
-                        User.Role = "user"; /*User should not be created without a role it will cause problems when logging in*/
-                        UserService.AddUser(User);
+                        User u = new User();
+                        u.Username = User.Username;
+                        u.Password = User.Password;
+                        u.Name = User.Name;
+                        u.Address = User.Address;
+                        u.PhoneNumber = User.PhoneNumber;
+                        u.Email = User.Email;
+                        u.Role = "user"; /*User should not be created without a role it will cause problems when logging in*/
+                        UserService.AddUser(u);
                         return RedirectToPage("../Welcome");
                     }
                 }
