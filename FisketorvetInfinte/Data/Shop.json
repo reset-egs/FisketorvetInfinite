@@ -4,7 +4,7 @@
     "ImageName": "hm.png",
     "Name": "H&M",
     "Category": "Clothing Store",
-    "WorkHours": "10:00 - 20:00",
+    "WorkHour": "12:00 - 20:00",
     "PhoneNumber": "27944758",
     "Description": "H&M is a Swedish multinational clothing company headquartered in Stockholm. It is known for its fast-fashion clothing for men, women, teenagers, and children. As of November 2019, H&M operates in 74 countries with over 5,000 stores under the various company brands, with 126,000 full-time equivalent positions.",
     "Image1": "hm1.jpg",
@@ -16,9 +16,9 @@
     "ImageName": "apotek.png",
     "Name": "Apotek",
     "Category": "Drugstore",
-    "WorkHours": "10:00 - 21:00",
+    "WorkHour": "12:00 - 20:00",
     "PhoneNumber": "54768944",
-    "Description": "",
+    "Description": "At Apotek Fisketorvet, you will find, in addition to prescription medicine, a large selection of well-known brands in skin care, cosmetics, baby and child care, dietary supplements and much more. Apotek Fisketorvet regularly has exciting campaigns from well-known brands such as Vichy and La Roche Posay, so here you will always find a great deal.",
     "Image1": "apotek1.jfif",
     "Image2": "apotek2.jpg",
     "Image3": "apotek3.jpg"
@@ -28,23 +28,47 @@
     "ImageName": "beautycare.png",
     "Name": "Beauty Care",
     "Category": "Beauty salon",
-    "WorkHours": "10:00 - 20:00",
+    "WorkHour": "12:00 - 20:00",
     "PhoneNumber": "55778833",
-    "Description": "",
-    "Image1": "hm1.jpg",
-    "Image2": "hm2.jpg",
-    "Image3": "hm3.jpg"
+    "Description": "Beauty Care at Fisketorvet takes great pride in providing good customer service. Here, good time is taken for each individual customer and Beauty Care's therapists make sure that you feel pampered and comfortable. Beauty Care offers a wide range of reputable nail treatments such as manicures, pedicures and shellac. In addition, e.g. foot massage. Come in and hear more. Welcome to Beauty Care at Fisketorvet.",
+    "Image1": "beautycare1.jfif",
+    "Image2": "beautycare2.jfif",
+    "Image3": "beautycare3.jpg"
   },
   {
     "ShopId": 4,
     "ImageName": "bent.png",
     "Name": "Bent",
     "Category": "Miscellaneous",
-    "WorkHours": "12:0 - 20:00",
+    "WorkHour": "12:00 - 20:00",
     "PhoneNumber": "54326756",
-    "Description": "",
-    "Image1": "hm1.jpg",
-    "Image2": "hm2.jpg",
-    "Image3": "hm3.jpg"
+    "Description": "According to the customers' wishes, BENT has become a crazy and crooked store - and that agrees well with who we are at BENT. Everything has a dispute - and BENT at Fisketorvet is filled with goods different than usual. Things for kids, for beauty, for gadget lovers or for you who lack fun inspiration - or maybe a gift! If you have seen it on TikTok, you will probably find it in BENT. More smart, crooked and crazy - than usual. If you have gone completely crazy, settle down in BENT's cafe in the shop, for example with a fresh bubble tea.",
+    "Image1": "bent1.jfif",
+    "Image2": "bent2.jfif",
+    "Image3": "bent3.jfif"
+  },
+  {
+    "ShopId": 5,
+    "ImageName": null,
+    "Name": "Test",
+    "Category": "Test",
+    "WorkHour": null,
+    "PhoneNumber": "12345678",
+    "Description": null,
+    "Image1": null,
+    "Image2": null,
+    "Image3": null
+  },
+  {
+    "ShopId": 6,
+    "ImageName": null,
+    "Name": "Test",
+    "Category": "Test",
+    "WorkHour": "test",
+    "PhoneNumber": "12345678",
+    "Description": null,
+    "Image1": null,
+    "Image2": null,
+    "Image3": null
   }
 ]

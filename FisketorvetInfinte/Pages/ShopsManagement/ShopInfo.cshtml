@@ -1,0 +1,16 @@
+﻿@page "{shopId}"
+@model FisketorvetInfinte.Pages.ShopsManagement.ShopInfoModel
+@{
+}
+<h1> @Model.Shop.Name</h1>
+<img src="~/images/@Model.Shop.ImageName" /><img />
+<p>@Model.Shop.Category</p>
+<h3>@Model.Shop.WorkHour</h3>
+  <p>@Model.Shop.Description</p>
+  <img style="max-width: 250px;" src="~/images/@Model.Shop.Image1" ></img>
+  <hr />
+  <img style="max-width: 300px;" src="~/images/@Model.Shop.Image2" ></img>
+  <hr />
+  <img style="max-width: 350px;" src="~/images/@Model.Shop.Image3" ></img>
+  <hr />
+  <p>Contact: @Model.Shop.PhoneNumber</p>

@@ -2,11 +2,19 @@
   {
     "Username": "abc",
     "Password": "123",
-    "ConfirmPassword": "123",
     "Name": "Admin",
-    "Address": "Admdi",
+    "Address": "Admin Street",
     "PhoneNumber": "43657890",
-    "Email": "admin@kfkdfkd.dk",
+    "Email": "admin@admin.com",
+    "Role": "admin"
+  },
+  {
+    "Username": "bartolisthebest",
+    "Password": "123",
+    "Name": "Bartol Best",
+    "Address": "The best street 69",
+    "PhoneNumber": "42 00 69 69",
+    "Email": "bartol.the.best@best.com",
     "Role": "user"
   }
 ]
